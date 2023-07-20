@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <calc_line_2_points.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,9 +15,11 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    calc_line_2_points calc_line_2_points;
 
 private slots:
     void on_action_triggered();
+    void on_action_2_triggered();
 
     void on_pushButton_clicked();
 
@@ -36,5 +39,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H

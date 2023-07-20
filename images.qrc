@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>graph.png</file>
+        <file>app1.ico</file>
+        <file>app2.ico</file>
+    </qresource>
+</RCC>

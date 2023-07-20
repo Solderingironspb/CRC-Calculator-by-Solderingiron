@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
@@ -33,6 +34,7 @@ class Ui_MainWindow
 {
 public:
     QAction *action;
+    QAction *action_2;
     QWidget *centralwidget;
     QTextEdit *textEdit;
     QPushButton *pushButton;
@@ -62,6 +64,7 @@ public:
     QLineEdit *lineEdit_Final_XOR_value;
     QMenuBar *menubar;
     QMenu *menu;
+    QMenu *menu_2;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -77,13 +80,20 @@ public:
         MainWindow->setMinimumSize(QSize(683, 559));
         MainWindow->setMaximumSize(QSize(683, 559));
         QFont font;
-        font.setFamily(QString::fromUtf8("Consolas"));
         font.setPointSize(11);
         MainWindow->setFont(font);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/app1.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
         MainWindow->setStyleSheet(QString::fromUtf8("QMainWindow{\n"
 "background-color: rgb(217, 234, 252);}"));
         action = new QAction(MainWindow);
         action->setObjectName(QString::fromUtf8("action"));
+        action_2 = new QAction(MainWindow);
+        action_2->setObjectName(QString::fromUtf8("action_2"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/app2.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        action_2->setIcon(icon1);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         textEdit = new QTextEdit(centralwidget);
@@ -105,7 +115,6 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(310, 440, 361, 61));
         QFont font2;
-        font2.setFamily(QString::fromUtf8("Segoe UI"));
         font2.setPointSize(11);
         font2.setBold(true);
         font2.setWeight(75);
@@ -127,7 +136,10 @@ public:
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setGeometry(QRect(162, 440, 131, 22));
-        lineEdit->setFont(font);
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Consolas"));
+        font3.setPointSize(11);
+        lineEdit->setFont(font3);
         lineEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -139,15 +151,14 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(20, 440, 131, 16));
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("Segoe UI"));
-        font3.setPointSize(10);
-        label->setFont(font3);
+        QFont font4;
+        font4.setPointSize(10);
+        label->setFont(font4);
         lineEdit_CRC = new QLineEdit(centralwidget);
         lineEdit_CRC->setObjectName(QString::fromUtf8("lineEdit_CRC"));
         lineEdit_CRC->setEnabled(true);
         lineEdit_CRC->setGeometry(QRect(90, 480, 201, 22));
-        lineEdit_CRC->setFont(font);
+        lineEdit_CRC->setFont(font3);
         lineEdit_CRC->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -159,16 +170,15 @@ public:
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(20, 480, 71, 16));
-        label_2->setFont(font3);
+        label_2->setFont(font4);
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(10, 20, 341, 71));
-        QFont font4;
-        font4.setFamily(QString::fromUtf8("Segoe UI"));
-        font4.setPointSize(10);
-        font4.setBold(false);
-        font4.setWeight(50);
-        groupBox->setFont(font4);
+        QFont font5;
+        font5.setPointSize(10);
+        font5.setBold(false);
+        font5.setWeight(50);
+        groupBox->setFont(font5);
         groupBox->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -195,32 +205,32 @@ public:
         gridLayout->setContentsMargins(0, 0, 0, 0);
         label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setFont(font3);
+        label_3->setFont(font4);
 
         gridLayout->addWidget(label_3, 0, 0, 1, 1);
 
         radioButton_CRC8 = new QRadioButton(layoutWidget);
         radioButton_CRC8->setObjectName(QString::fromUtf8("radioButton_CRC8"));
-        radioButton_CRC8->setFont(font3);
+        radioButton_CRC8->setFont(font4);
 
         gridLayout->addWidget(radioButton_CRC8, 0, 1, 1, 1);
 
         radioButton_CRC16 = new QRadioButton(layoutWidget);
         radioButton_CRC16->setObjectName(QString::fromUtf8("radioButton_CRC16"));
-        radioButton_CRC16->setFont(font3);
+        radioButton_CRC16->setFont(font4);
 
         gridLayout->addWidget(radioButton_CRC16, 0, 2, 1, 1);
 
         radioButton_3 = new QRadioButton(layoutWidget);
         radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
-        radioButton_3->setFont(font3);
+        radioButton_3->setFont(font4);
 
         gridLayout->addWidget(radioButton_3, 0, 3, 1, 1);
 
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(10, 100, 401, 61));
-        groupBox_2->setFont(font3);
+        groupBox_2->setFont(font4);
         groupBox_2->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -247,7 +257,7 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(radioButton_Predefined->sizePolicy().hasHeightForWidth());
         radioButton_Predefined->setSizePolicy(sizePolicy1);
-        radioButton_Predefined->setFont(font3);
+        radioButton_Predefined->setFont(font4);
         radioButton_Predefined->setChecked(true);
         comboBox = new QComboBox(groupBox_2);
         comboBox->setObjectName(QString::fromUtf8("comboBox"));
@@ -269,11 +279,11 @@ public:
         radioButton_Custom = new QRadioButton(groupBox_2);
         radioButton_Custom->setObjectName(QString::fromUtf8("radioButton_Custom"));
         radioButton_Custom->setGeometry(QRect(310, 30, 81, 20));
-        radioButton_Custom->setFont(font3);
+        radioButton_Custom->setFont(font4);
         groupBox_3 = new QGroupBox(centralwidget);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
         groupBox_3->setGeometry(QRect(10, 170, 661, 141));
-        groupBox_3->setFont(font3);
+        groupBox_3->setFont(font4);
         groupBox_3->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -295,7 +305,7 @@ public:
         checkBox_Input_Reflected = new QCheckBox(groupBox_3);
         checkBox_Input_Reflected->setObjectName(QString::fromUtf8("checkBox_Input_Reflected"));
         checkBox_Input_Reflected->setGeometry(QRect(10, 20, 151, 20));
-        checkBox_Input_Reflected->setFont(font3);
+        checkBox_Input_Reflected->setFont(font4);
         checkBox_Input_Reflected->setStyleSheet(QString::fromUtf8("QCheckBox::indicator:checked {\n"
 "   \n"
 "	color: rgb(85, 255, 127);\n"
@@ -303,16 +313,16 @@ public:
         checkBox_Result_Reflected = new QCheckBox(groupBox_3);
         checkBox_Result_Reflected->setObjectName(QString::fromUtf8("checkBox_Result_Reflected"));
         checkBox_Result_Reflected->setGeometry(QRect(160, 20, 151, 20));
-        checkBox_Result_Reflected->setFont(font3);
+        checkBox_Result_Reflected->setFont(font4);
         label_4 = new QLabel(groupBox_3);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(10, 50, 91, 16));
-        label_4->setFont(font3);
+        label_4->setFont(font4);
         lineEdit_Polynomial = new QLineEdit(groupBox_3);
         lineEdit_Polynomial->setObjectName(QString::fromUtf8("lineEdit_Polynomial"));
         lineEdit_Polynomial->setEnabled(true);
         lineEdit_Polynomial->setGeometry(QRect(110, 50, 151, 22));
-        lineEdit_Polynomial->setFont(font);
+        lineEdit_Polynomial->setFont(font3);
         lineEdit_Polynomial->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -323,11 +333,11 @@ public:
         label_5 = new QLabel(groupBox_3);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(10, 80, 121, 16));
-        label_5->setFont(font3);
+        label_5->setFont(font4);
         lineEdit_Initial_value = new QLineEdit(groupBox_3);
         lineEdit_Initial_value->setObjectName(QString::fromUtf8("lineEdit_Initial_value"));
         lineEdit_Initial_value->setGeometry(QRect(110, 80, 151, 22));
-        lineEdit_Initial_value->setFont(font);
+        lineEdit_Initial_value->setFont(font3);
         lineEdit_Initial_value->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -338,11 +348,11 @@ public:
         label_6 = new QLabel(groupBox_3);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(10, 110, 131, 16));
-        label_6->setFont(font3);
+        label_6->setFont(font4);
         lineEdit_Final_XOR_value = new QLineEdit(groupBox_3);
         lineEdit_Final_XOR_value->setObjectName(QString::fromUtf8("lineEdit_Final_XOR_value"));
         lineEdit_Final_XOR_value->setGeometry(QRect(110, 110, 151, 22));
-        lineEdit_Final_XOR_value->setFont(font);
+        lineEdit_Final_XOR_value->setFont(font3);
         lineEdit_Final_XOR_value->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -356,13 +366,17 @@ public:
         menubar->setGeometry(QRect(0, 0, 683, 21));
         menu = new QMenu(menubar);
         menu->setObjectName(QString::fromUtf8("menu"));
+        menu_2 = new QMenu(menubar);
+        menu_2->setObjectName(QString::fromUtf8("menu_2"));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
 
         menubar->addAction(menu->menuAction());
+        menubar->addAction(menu_2->menuAction());
         menu->addAction(action);
+        menu_2->addAction(action_2);
 
         retranslateUi(MainWindow);
 
@@ -376,6 +390,7 @@ public:
 #if QT_CONFIG(shortcut)
         action->setShortcut(QCoreApplication::translate("MainWindow", "F1", nullptr));
 #endif // QT_CONFIG(shortcut)
+        action_2->setText(QCoreApplication::translate("MainWindow", "\320\243\321\200\320\260\320\262\320\275\320\265\320\275\320\270\320\265 \320\277\321\200\321\217\320\274\320\276\320\271, \320\277\321\200\320\276\321\205\320\276\320\264\321\217\321\211\320\265\320\271 \321\207\320\265\321\200\320\265\320\267 2 \321\202\320\276\321\207\320\272\320\270", nullptr));
         textEdit->setDocumentTitle(QString());
         textEdit->setMarkdown(QString());
         textEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\274\320\260\321\201\321\201\320\270\320\262 \320\261\320\260\320\271\321\202 \320\262 \321\204\320\276\321\200\320\274\320\260\321\202\320\265 HEX \320\247\320\265\321\200\320\265\320\267 \320\267\320\260\320\277\321\217\321\202\321\203\321\216. \320\237\321\200\320\270\320\274\320\265\321\200: 0x01, 0x23, 0xCF, 0xFE", nullptr));
@@ -397,6 +412,7 @@ public:
         label_5->setText(QCoreApplication::translate("MainWindow", "Initial value:", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Final XOR value:", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\274\320\276\321\211\321\214", nullptr));
+        menu_2->setTitle(QCoreApplication::translate("MainWindow", "\320\234\320\270\320\275\320\270 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\321\213", nullptr));
     } // retranslateUi
 
 };

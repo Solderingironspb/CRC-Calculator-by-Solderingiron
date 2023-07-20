@@ -30,12 +30,15 @@
   </property>
   <property name="font">
    <font>
-    <family>Consolas</family>
     <pointsize>11</pointsize>
    </font>
   </property>
   <property name="windowTitle">
    <string>CRC Calculator by Solderingiron v1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/app1.ico</normaloff>:/app1.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow{
@@ -88,7 +91,6 @@ background-color: rgb(217, 234, 252);}</string>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>11</pointsize>
       <weight>75</weight>
       <bold>true</bold>
@@ -153,7 +155,6 @@ QPushButton:flat {
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>10</pointsize>
      </font>
     </property>
@@ -201,7 +202,6 @@ QPushButton:flat {
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>10</pointsize>
      </font>
     </property>
@@ -220,7 +220,6 @@ QPushButton:flat {
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <bold>false</bold>
@@ -263,7 +262,6 @@ QGroupBox::title {
        <widget class="QLabel" name="label_3">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
           <pointsize>10</pointsize>
          </font>
         </property>
@@ -276,7 +274,6 @@ QGroupBox::title {
        <widget class="QRadioButton" name="radioButton_CRC8">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
           <pointsize>10</pointsize>
          </font>
         </property>
@@ -289,7 +286,6 @@ QGroupBox::title {
        <widget class="QRadioButton" name="radioButton_CRC16">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
           <pointsize>10</pointsize>
          </font>
         </property>
@@ -302,7 +298,6 @@ QGroupBox::title {
        <widget class="QRadioButton" name="radioButton_3">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
           <pointsize>10</pointsize>
          </font>
         </property>
@@ -325,7 +320,6 @@ QGroupBox::title {
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>10</pointsize>
      </font>
     </property>
@@ -369,7 +363,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -425,7 +418,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -445,7 +437,6 @@ QGroupBox::title {
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>10</pointsize>
      </font>
     </property>
@@ -483,7 +474,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -508,7 +498,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -527,7 +516,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -574,7 +562,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -618,7 +605,6 @@ QGroupBox::title {
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -668,7 +654,14 @@ QGroupBox::title {
     </property>
     <addaction name="action"/>
    </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Мини программы</string>
+    </property>
+    <addaction name="action_2"/>
+   </widget>
    <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action">
@@ -679,7 +672,18 @@ QGroupBox::title {
     <string>F1</string>
    </property>
   </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/app2.ico</normaloff>:/app2.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Уравнение прямой, проходящей через 2 точки</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>

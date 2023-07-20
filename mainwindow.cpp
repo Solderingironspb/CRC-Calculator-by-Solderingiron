@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
     ui->action->setEnabled(1);
     /*Настройки по-умолчанию*/
@@ -26,13 +27,16 @@ MainWindow::~MainWindow()
 
 }
 
-void MainWindow::on_action_triggered()
-{
-About about_window;
-about_window.setModal(true);
-about_window.setWindowFlags(Qt::Dialog| Qt::CustomizeWindowHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint | Qt::WindowSystemMenuHint); //Кнопки на окне(Свернуть, большое окно и закрыть.)
-about_window.exec();
+void MainWindow::on_action_triggered(){
+    About about_window;
+    about_window.setModal(true);
+    about_window.setWindowFlags(Qt::Dialog| Qt::CustomizeWindowHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint | Qt::WindowSystemMenuHint); //Кнопки на окне(Свернуть, большое окно и закрыть.)
+    about_window.exec();
+}
 
+void MainWindow::on_action_2_triggered(){
+
+    calc_line_2_points.show();
 
 }
 

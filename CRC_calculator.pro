@@ -11,21 +11,28 @@ CONFIG += c++11
 SOURCES += \
     CRC_Software_calculation.cpp \
     about.cpp \
+    calc_line_2_points.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     CRC_Software_calculation.h \
     about.h \
+    calc_line_2_points.h \
     mainwindow.h
 
 FORMS += \
     about.ui \
+    calc_line_2_points.ui \
     mainwindow.ui
 
-RC_ICONS = app.ico
+RC_ICONS = app1.ico
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    images.qrc
