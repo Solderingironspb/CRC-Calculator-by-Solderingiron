@@ -1,0 +1,11 @@
+debug/CRC_Software_calculation.o
+debug/about.o
+debug/calc_line_2_points.o
+debug/hex_to_float_double.o
+debug/main.o
+debug/mainwindow.o
+debug/qrc_images.o
+debug/moc_about.o
+debug/moc_calc_line_2_points.o
+debug/moc_hex_to_float_double.o
+debug/moc_mainwindow.o

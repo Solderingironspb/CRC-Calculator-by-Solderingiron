@@ -6,6 +6,7 @@ About::About(QWidget *parent) :
     ui(new Ui::About)
 {
     ui->setupUi(this);
+    //ui->textBrowser->setSource(QUrl("../help/index.html"));
 }
 
 About::~About()

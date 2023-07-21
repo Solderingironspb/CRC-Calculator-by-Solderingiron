@@ -12,48 +12,70 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_About
 {
 public:
-    QGridLayout *gridLayout;
+    QVBoxLayout *verticalLayout_4;
+    QHBoxLayout *horizontalLayout_3;
+    QSpacerItem *horizontalSpacer_2;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_3;
+    QVBoxLayout *verticalLayout;
     QLabel *label;
-    QSpacerItem *verticalSpacer;
-    QLabel *label_3;
     QLabel *label_2;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer;
+    QLabel *label_3;
     QGroupBox *groupBox;
-    QGridLayout *gridLayout_2;
-    QLabel *label_6;
-    QLabel *label_4;
-    QLabel *label_8;
-    QLabel *label_5;
+    QVBoxLayout *verticalLayout_3;
+    QSpacerItem *verticalSpacer;
+    QTextBrowser *textBrowser;
     QLabel *label_9;
-    QLabel *label_7;
 
     void setupUi(QDialog *About)
     {
         if (About->objectName().isEmpty())
             About->setObjectName(QString::fromUtf8("About"));
         About->setWindowModality(Qt::NonModal);
-        About->resize(820, 340);
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        About->resize(716, 389);
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(About->sizePolicy().hasHeightForWidth());
         About->setSizePolicy(sizePolicy);
-        About->setMinimumSize(QSize(820, 340));
-        About->setMaximumSize(QSize(820, 340));
+        About->setMinimumSize(QSize(0, 0));
+        About->setMaximumSize(QSize(6666, 6666));
         About->setContextMenuPolicy(Qt::NoContextMenu);
         About->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "background-color: rgb(217, 234, 252);}"));
-        gridLayout = new QGridLayout(About);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        verticalLayout_4 = new QVBoxLayout(About);
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_2);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_3);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label = new QLabel(About);
         label->setObjectName(QString::fromUtf8("label"));
         QFont font;
@@ -62,17 +84,7 @@ public:
         font.setWeight(75);
         label->setFont(font);
 
-        gridLayout->addWidget(label, 0, 0, 1, 3, Qt::AlignRight);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 3, 2, 1, 1);
-
-        label_3 = new QLabel(About);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setFont(font);
-
-        gridLayout->addWidget(label_3, 2, 2, 1, 1, Qt::AlignRight);
+        verticalLayout->addWidget(label);
 
         label_2 = new QLabel(About);
         label_2->setObjectName(QString::fromUtf8("label_2"));
@@ -82,12 +94,44 @@ public:
         font1.setWeight(75);
         label_2->setFont(font1);
 
-        gridLayout->addWidget(label_2, 1, 2, 1, 1);
+        verticalLayout->addWidget(label_2);
+
+
+        horizontalLayout_2->addLayout(verticalLayout);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_2);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+        label_3 = new QLabel(About);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setFont(font);
+
+        horizontalLayout->addWidget(label_3);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+
+        horizontalLayout_3->addLayout(verticalLayout_2);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_3);
 
         groupBox = new QGroupBox(About);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
+        groupBox->setSizePolicy(sizePolicy1);
         groupBox->setMinimumSize(QSize(0, 200));
-        groupBox->setMaximumSize(QSize(16777215, 300));
+        groupBox->setMaximumSize(QSize(16777215, 16777215));
         QFont font2;
         font2.setFamily(QString::fromUtf8("Consolas"));
         font2.setPointSize(11);
@@ -110,51 +154,25 @@ public:
 "                                      stop: 0 #FFFFFF, stop: 1 #FFFFFF);\n"
 "}\n"
 ""));
-        gridLayout_2 = new QGridLayout(groupBox);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        label_6 = new QLabel(groupBox);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("MS Shell Dlg 2"));
-        font3.setPointSize(10);
-        label_6->setFont(font3);
+        verticalLayout_3 = new QVBoxLayout(groupBox);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalSpacer = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
-        gridLayout_2->addWidget(label_6, 9, 0, 1, 1);
+        verticalLayout_3->addItem(verticalSpacer);
 
-        label_4 = new QLabel(groupBox);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setFont(font3);
+        textBrowser = new QTextBrowser(groupBox);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setMinimumSize(QSize(0, 0));
 
-        gridLayout_2->addWidget(label_4, 4, 0, 1, 1, Qt::AlignLeft);
-
-        label_8 = new QLabel(groupBox);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        QFont font4;
-        font4.setFamily(QString::fromUtf8("Consolas"));
-        font4.setPointSize(10);
-        label_8->setFont(font4);
-
-        gridLayout_2->addWidget(label_8, 10, 0, 1, 1);
-
-        label_5 = new QLabel(groupBox);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setFont(font3);
-
-        gridLayout_2->addWidget(label_5, 8, 0, 1, 1);
+        verticalLayout_3->addWidget(textBrowser);
 
         label_9 = new QLabel(groupBox);
         label_9->setObjectName(QString::fromUtf8("label_9"));
 
-        gridLayout_2->addWidget(label_9, 2, 0, 1, 1);
-
-        label_7 = new QLabel(groupBox);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setFont(font3);
-
-        gridLayout_2->addWidget(label_7, 3, 0, 1, 1);
+        verticalLayout_3->addWidget(label_9);
 
 
-        gridLayout->addWidget(groupBox, 4, 0, 1, 3);
+        verticalLayout_4->addWidget(groupBox);
 
 
         retranslateUi(About);
@@ -166,15 +184,24 @@ public:
     {
         About->setWindowTitle(QCoreApplication::translate("About", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
         label->setText(QCoreApplication::translate("About", "Solderingiron CRC Calculator", nullptr));
-        label_3->setText(QCoreApplication::translate("About", "V 1.0", nullptr));
         label_2->setText(QCoreApplication::translate("About", "\320\237\320\276\320\264\321\201\321\207\320\265\321\202 CRC - 8, CRC - 16, CRC - 32", nullptr));
+        label_3->setText(QCoreApplication::translate("About", "V 1.0.2", nullptr));
         groupBox->setTitle(QCoreApplication::translate("About", "\320\230\320\275\321\204\320\276", nullptr));
-        label_6->setText(QCoreApplication::translate("About", "Git: https://github.com/Solderingironspb/", nullptr));
-        label_4->setText(QCoreApplication::translate("About", "\320\222\320\276\320\273\320\272\320\276\320\262 \320\236\320\273\320\265\320\263", nullptr));
-        label_8->setText(QCoreApplication::translate("About", "\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\275\320\260\321\217 \321\200\320\265\320\260\320\273\320\270\320\267\320\260\321\206\320\270\321\217 \320\277\320\276\320\264\321\201\321\207\320\265\321\202\320\260 CRC \320\275\320\260 \321\217\320\267\321\213\320\272\320\265 \320\241\320\270: https://github.com/Solderingironspb/CRC_Software_calculation", nullptr));
-        label_5->setText(QCoreApplication::translate("About", "e-mail: solderingiron.notification@yandex.ru", nullptr));
+        textBrowser->setHtml(QCoreApplication::translate("About", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\302\251 2023 \320\222\320\276\320\273\320\272\320\276\320\262 \320\236\320\273\320\265\320\263 </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\233\320\270\321\206\320\265\320\275\320\267\320\270\321\217: GNU GENERAL PUBLIC LICENSE</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:1"
+                        "0pt;\">e-mail: solderingiron.notification@yandex.ru</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Git: https://github.com/Solderingironspb/</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\275\320\260\321\217 \321\200\320\265\320\260\320\273\320\270\320\267\320\260\321\206\320\270\321\217 \320\277\320\276\320\264\321\201\321\207\320\265\321\202\320\260 CRC \320\275\320\260 \321\217\320\267\321\213\320\272\320\265 \320\241\320\270: </span><span style=\" color:#0000ff;\">https://github.com/Solderingironspb/CRC_software_calculation</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320"
+                        "\224\320\260\320\275\320\275\320\260\321\217 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260 \321\201\320\276\320\264\320\265\321\200\320\266\320\270\321\202 \320\262 \321\201\320\265\320\261\320\265 \320\262\321\201\320\277\320\276\320\274\320\276\320\263\320\260\321\202\320\265\320\273\321\214\320\275\321\213\320\265 \320\274\320\270\320\275\320\270-\320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\321\213, \320\272\320\276\321\202\320\276\321\200\321\213\320\265 \320\261\321\213\320\262\320\260\321\216\321\202 \320\277\320\276\320\273\320\265\320\267\320\275\321\213 \320\277\321\200\320\270 \321\200\320\260\320\267\321\200\320\260\320\261\320\276\321\202\320\272\320\265 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\320\271 \320\275\320\260 \320\274\320\270\320\272\321\200\320\276\320\272\320\276\320\275\321\202\321\200\320\276\320\273\320\273\320\265\321\200\320\260\321\205.</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; mar"
+                        "gin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\241\321\201\321\213\320\273\320\272\320\260 \320\275\320\260 \320\277\321\200\320\276\320\265\320\272\321\202: </span><span style=\" font-size:10pt; color:#0000ff;\">https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron</span></p></body></html>", nullptr));
         label_9->setText(QString());
-        label_7->setText(QCoreApplication::translate("About", "\320\220\320\262\321\202\320\276\321\200:", nullptr));
     } // retranslateUi
 
 };

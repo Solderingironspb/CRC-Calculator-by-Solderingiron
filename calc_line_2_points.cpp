@@ -18,6 +18,7 @@ calc_line_2_points::calc_line_2_points(QWidget *parent) :
 
 {
     ui->setupUi(this);
+
     setWindowIcon(QIcon(":/app2.ico"));
     //Задать очередь по кнопке Tab
     QWidget::setTabOrder(ui->lineEdit_Xa, ui->lineEdit_Ya);

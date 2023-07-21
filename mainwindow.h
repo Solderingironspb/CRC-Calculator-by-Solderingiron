@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <calc_line_2_points.h>
+#include <hex_to_float_double.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,10 +17,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     calc_line_2_points calc_line_2_points;
+    hex_to_float_double hex_to_float_double;
 
 private slots:
     void on_action_triggered();
     void on_action_2_triggered();
+    void on_action_3_triggered();
 
     void on_pushButton_clicked();
 

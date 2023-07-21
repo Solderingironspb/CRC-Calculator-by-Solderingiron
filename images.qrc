@@ -3,5 +3,7 @@
         <file>graph.png</file>
         <file>app1.ico</file>
         <file>app2.ico</file>
+        <file>app3.ico</file>
+        <file>about.png</file>
     </qresource>
 </RCC>
