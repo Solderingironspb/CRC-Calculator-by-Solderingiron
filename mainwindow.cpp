@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include "CRC_Software_calculation.h"
+
 #include "about.h"
 
 uint8_t CRC_Arr[1024] = {0,};
@@ -44,6 +45,12 @@ void MainWindow::on_action_2_triggered(){
 void MainWindow::on_action_3_triggered(){
 
     hex_to_float_double.show();
+
+}
+
+void MainWindow::on_action_RTD_Calculator_triggered(){
+
+    RTD_calculator.show();
 
 }
 

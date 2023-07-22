@@ -34,7 +34,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>CRC Calculator by Solderingiron v1.0.2</string>
+   <string>CRC Calculator by Solderingiron v1.0.3</string>
   </property>
   <property name="windowIcon">
    <iconset resource="images.qrc">
@@ -680,6 +680,7 @@ QPushButton:flat {
     </property>
     <addaction name="action_2"/>
     <addaction name="action_3"/>
+    <addaction name="action_RTD_Calculator"/>
    </widget>
    <addaction name="menu_2"/>
    <addaction name="menu"/>
@@ -719,6 +720,18 @@ QPushButton:flat {
    </property>
    <property name="shortcut">
     <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="action_RTD_Calculator">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/app4.png</normaloff>:/app4.png</iconset>
+   </property>
+   <property name="text">
+    <string>RTD Calculator Resistance to Temperature</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
    </property>
   </action>
  </widget>

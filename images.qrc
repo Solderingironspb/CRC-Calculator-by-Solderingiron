@@ -5,5 +5,6 @@
         <file>app2.ico</file>
         <file>app3.ico</file>
         <file>about.png</file>
+        <file>app4.png</file>
     </qresource>
 </RCC>

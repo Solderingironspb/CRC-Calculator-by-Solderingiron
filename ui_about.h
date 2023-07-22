@@ -185,7 +185,7 @@ public:
         About->setWindowTitle(QCoreApplication::translate("About", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
         label->setText(QCoreApplication::translate("About", "Solderingiron CRC Calculator", nullptr));
         label_2->setText(QCoreApplication::translate("About", "\320\237\320\276\320\264\321\201\321\207\320\265\321\202 CRC - 8, CRC - 16, CRC - 32", nullptr));
-        label_3->setText(QCoreApplication::translate("About", "V 1.0.2", nullptr));
+        label_3->setText(QCoreApplication::translate("About", "V 1.0.3", nullptr));
         groupBox->setTitle(QCoreApplication::translate("About", "\320\230\320\275\321\204\320\276", nullptr));
         textBrowser->setHtml(QCoreApplication::translate("About", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

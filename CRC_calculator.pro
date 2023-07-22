@@ -14,20 +14,23 @@ SOURCES += \
     calc_line_2_points.cpp \
     hex_to_float_double.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    rtd_calculator_resistance_to_temperature.cpp
 
 HEADERS += \
     CRC_Software_calculation.h \
     about.h \
     calc_line_2_points.h \
     hex_to_float_double.h \
-    mainwindow.h
+    mainwindow.h \
+    rtd_calculator_resistance_to_temperature.h
 
 FORMS += \
     about.ui \
     calc_line_2_points.ui \
     hex_to_float_double.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    rtd_calculator_resistance_to_temperature.ui
 
 RC_ICONS = app1.ico
 

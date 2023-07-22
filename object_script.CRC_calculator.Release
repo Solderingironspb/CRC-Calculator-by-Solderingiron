@@ -4,8 +4,10 @@ release/calc_line_2_points.o
 release/hex_to_float_double.o
 release/main.o
 release/mainwindow.o
+release/rtd_calculator_resistance_to_temperature.o
 release/qrc_images.o
 release/moc_about.o
 release/moc_calc_line_2_points.o
 release/moc_hex_to_float_double.o
 release/moc_mainwindow.o
+release/moc_rtd_calculator_resistance_to_temperature.o

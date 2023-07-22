@@ -40,6 +40,7 @@ public:
     QAction *action;
     QAction *action_2;
     QAction *action_3;
+    QAction *action_RTD_Calculator;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout_3;
@@ -121,6 +122,11 @@ public:
         QIcon icon3;
         icon3.addFile(QString::fromUtf8(":/app3.ico"), QSize(), QIcon::Normal, QIcon::Off);
         action_3->setIcon(icon3);
+        action_RTD_Calculator = new QAction(MainWindow);
+        action_RTD_Calculator->setObjectName(QString::fromUtf8("action_RTD_Calculator"));
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/app4.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_RTD_Calculator->setIcon(icon4);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout_4 = new QVBoxLayout(centralwidget);
@@ -520,6 +526,7 @@ public:
         menu->addAction(action);
         menu_2->addAction(action_2);
         menu_2->addAction(action_3);
+        menu_2->addAction(action_RTD_Calculator);
 
         retranslateUi(MainWindow);
 
@@ -528,7 +535,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.2", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.3", nullptr));
         action->setText(QCoreApplication::translate("MainWindow", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
 #if QT_CONFIG(shortcut)
         action->setShortcut(QCoreApplication::translate("MainWindow", "F1", nullptr));
@@ -540,6 +547,10 @@ public:
         action_3->setText(QCoreApplication::translate("MainWindow", "HEX to float/double", nullptr));
 #if QT_CONFIG(shortcut)
         action_3->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+2", nullptr));
+#endif // QT_CONFIG(shortcut)
+        action_RTD_Calculator->setText(QCoreApplication::translate("MainWindow", "RTD Calculator Resistance to Temperature", nullptr));
+#if QT_CONFIG(shortcut)
+        action_RTD_Calculator->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+3", nullptr));
 #endif // QT_CONFIG(shortcut)
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "CRC width", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Bit lenght:", nullptr));

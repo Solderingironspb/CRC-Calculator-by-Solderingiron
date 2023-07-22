@@ -4,8 +4,10 @@ debug/calc_line_2_points.o
 debug/hex_to_float_double.o
 debug/main.o
 debug/mainwindow.o
+debug/rtd_calculator_resistance_to_temperature.o
 debug/qrc_images.o
 debug/moc_about.o
 debug/moc_calc_line_2_points.o
 debug/moc_hex_to_float_double.o
 debug/moc_mainwindow.o
+debug/moc_rtd_calculator_resistance_to_temperature.o

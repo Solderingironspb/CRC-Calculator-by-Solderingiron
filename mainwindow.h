@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <calc_line_2_points.h>
 #include <hex_to_float_double.h>
+#include "rtd_calculator_resistance_to_temperature.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,13 +17,13 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    calc_line_2_points calc_line_2_points;
-    hex_to_float_double hex_to_float_double;
+
 
 private slots:
     void on_action_triggered();
     void on_action_2_triggered();
     void on_action_3_triggered();
+    void on_action_RTD_Calculator_triggered();
 
     void on_pushButton_clicked();
 
@@ -42,6 +43,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    calc_line_2_points calc_line_2_points;
+    hex_to_float_double hex_to_float_double;
+    RTD_Calculator_Resistance_to_Temperature RTD_calculator;
 
 };
 #endif // MAINWINDOW_H
