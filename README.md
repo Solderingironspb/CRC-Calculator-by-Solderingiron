@@ -1,4 +1,4 @@
-# CRC-Calculator-by-Solderingiron v1.0.2
+# CRC-Calculator-by-Solderingiron v1.0.3
 ### Программа для расчета контрольной суммы: CRC8, CRC16, CRC32 + Мини-программы(дополняются)
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/110be3c9-d340-4ebb-9c2a-ee4546e921ef)
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/45a18669-5b47-422a-974d-5010821b9409)
