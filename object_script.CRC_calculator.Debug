@@ -5,9 +5,13 @@ debug/hex_to_float_double.o
 debug/main.o
 debug/mainwindow.o
 debug/rtd_calculator_resistance_to_temperature.o
+debug/signal_converter.o
+debug/thermocouple_calculator.o
 debug/qrc_images.o
 debug/moc_about.o
 debug/moc_calc_line_2_points.o
 debug/moc_hex_to_float_double.o
 debug/moc_mainwindow.o
 debug/moc_rtd_calculator_resistance_to_temperature.o
+debug/moc_signal_converter.o
+debug/moc_thermocouple_calculator.o

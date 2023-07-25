@@ -41,6 +41,8 @@ public:
     QAction *action_2;
     QAction *action_3;
     QAction *action_RTD_Calculator;
+    QAction *action_Thermocouple_Calculator;
+    QAction *action_Signal_Converter;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout_3;
@@ -127,6 +129,16 @@ public:
         QIcon icon4;
         icon4.addFile(QString::fromUtf8(":/app4.png"), QSize(), QIcon::Normal, QIcon::Off);
         action_RTD_Calculator->setIcon(icon4);
+        action_Thermocouple_Calculator = new QAction(MainWindow);
+        action_Thermocouple_Calculator->setObjectName(QString::fromUtf8("action_Thermocouple_Calculator"));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/app5.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_Thermocouple_Calculator->setIcon(icon5);
+        action_Signal_Converter = new QAction(MainWindow);
+        action_Signal_Converter->setObjectName(QString::fromUtf8("action_Signal_Converter"));
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/app6.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_Signal_Converter->setIcon(icon6);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout_4 = new QVBoxLayout(centralwidget);
@@ -144,7 +156,6 @@ public:
         QFont font1;
         font1.setPointSize(10);
         font1.setBold(false);
-        font1.setWeight(50);
         groupBox->setFont(font1);
         groupBox->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
@@ -353,10 +364,7 @@ public:
         lineEdit_Polynomial = new QLineEdit(groupBox_3);
         lineEdit_Polynomial->setObjectName(QString::fromUtf8("lineEdit_Polynomial"));
         lineEdit_Polynomial->setEnabled(true);
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("Consolas"));
-        font3.setPointSize(11);
-        lineEdit_Polynomial->setFont(font3);
+        lineEdit_Polynomial->setFont(font);
         lineEdit_Polynomial->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -375,7 +383,7 @@ public:
 
         lineEdit_Initial_value = new QLineEdit(groupBox_3);
         lineEdit_Initial_value->setObjectName(QString::fromUtf8("lineEdit_Initial_value"));
-        lineEdit_Initial_value->setFont(font3);
+        lineEdit_Initial_value->setFont(font);
         lineEdit_Initial_value->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -394,7 +402,7 @@ public:
 
         lineEdit_Final_XOR_value = new QLineEdit(groupBox_3);
         lineEdit_Final_XOR_value->setObjectName(QString::fromUtf8("lineEdit_Final_XOR_value"));
-        lineEdit_Final_XOR_value->setFont(font3);
+        lineEdit_Final_XOR_value->setFont(font);
         lineEdit_Final_XOR_value->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -420,10 +428,7 @@ public:
 
         textEdit = new QTextEdit(centralwidget);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        QFont font4;
-        font4.setFamily(QString::fromUtf8("Consolas"));
-        font4.setPointSize(10);
-        textEdit->setFont(font4);
+        textEdit->setFont(font2);
         textEdit->setStyleSheet(QString::fromUtf8("QTextEdit{\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -445,7 +450,7 @@ public:
 
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setFont(font3);
+        lineEdit->setFont(font);
         lineEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -462,11 +467,10 @@ public:
         sizePolicy3.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
         pushButton->setSizePolicy(sizePolicy3);
         pushButton->setMinimumSize(QSize(361, 61));
-        QFont font5;
-        font5.setPointSize(11);
-        font5.setBold(true);
-        font5.setWeight(75);
-        pushButton->setFont(font5);
+        QFont font3;
+        font3.setPointSize(11);
+        font3.setBold(true);
+        pushButton->setFont(font3);
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border: 1px solid #97c3f3;\n"
 "border-radius: 2px;\n"
@@ -493,7 +497,7 @@ public:
         lineEdit_CRC = new QLineEdit(centralwidget);
         lineEdit_CRC->setObjectName(QString::fromUtf8("lineEdit_CRC"));
         lineEdit_CRC->setEnabled(true);
-        lineEdit_CRC->setFont(font3);
+        lineEdit_CRC->setFont(font);
         lineEdit_CRC->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -511,7 +515,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 789, 21));
+        menubar->setGeometry(QRect(0, 0, 789, 22));
         menu = new QMenu(menubar);
         menu->setObjectName(QString::fromUtf8("menu"));
         menu_2 = new QMenu(menubar);
@@ -527,6 +531,8 @@ public:
         menu_2->addAction(action_2);
         menu_2->addAction(action_3);
         menu_2->addAction(action_RTD_Calculator);
+        menu_2->addAction(action_Thermocouple_Calculator);
+        menu_2->addAction(action_Signal_Converter);
 
         retranslateUi(MainWindow);
 
@@ -535,7 +541,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.3", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.4", nullptr));
         action->setText(QCoreApplication::translate("MainWindow", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
 #if QT_CONFIG(shortcut)
         action->setShortcut(QCoreApplication::translate("MainWindow", "F1", nullptr));
@@ -551,6 +557,14 @@ public:
         action_RTD_Calculator->setText(QCoreApplication::translate("MainWindow", "RTD Calculator Resistance to Temperature", nullptr));
 #if QT_CONFIG(shortcut)
         action_RTD_Calculator->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+3", nullptr));
+#endif // QT_CONFIG(shortcut)
+        action_Thermocouple_Calculator->setText(QCoreApplication::translate("MainWindow", "Thermocouple Calculator", nullptr));
+#if QT_CONFIG(shortcut)
+        action_Thermocouple_Calculator->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+4", nullptr));
+#endif // QT_CONFIG(shortcut)
+        action_Signal_Converter->setText(QCoreApplication::translate("MainWindow", "Signal Converter(0-10v and 4-20mA)", nullptr));
+#if QT_CONFIG(shortcut)
+        action_Signal_Converter->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+5", nullptr));
 #endif // QT_CONFIG(shortcut)
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "CRC width", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Bit lenght:", nullptr));

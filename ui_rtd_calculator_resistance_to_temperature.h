@@ -120,6 +120,7 @@ public:
         lineEdit_alpha->setObjectName(QString::fromUtf8("lineEdit_alpha"));
         lineEdit_alpha->setMaximumSize(QSize(60, 16777215));
         lineEdit_alpha->setFont(font1);
+        lineEdit_alpha->setReadOnly(true);
 
         horizontalLayout->addWidget(lineEdit_alpha);
 

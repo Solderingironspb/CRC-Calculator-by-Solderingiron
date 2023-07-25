@@ -54,6 +54,17 @@ void MainWindow::on_action_RTD_Calculator_triggered(){
 
 }
 
+void MainWindow::on_action_Thermocouple_Calculator_triggered(){
+    THERMOCOUPLE_calculator.show();
+}
+
+void MainWindow::on_action_Signal_Converter_triggered(){
+    SIGNAL_converter.show();
+}
+
+
+
+
 void MainWindow::on_pushButton_clicked()
 {
     QMessageBox msgBox;

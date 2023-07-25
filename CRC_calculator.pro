@@ -15,7 +15,9 @@ SOURCES += \
     hex_to_float_double.cpp \
     main.cpp \
     mainwindow.cpp \
-    rtd_calculator_resistance_to_temperature.cpp
+    rtd_calculator_resistance_to_temperature.cpp \
+    signal_converter.cpp \
+    thermocouple_calculator.cpp
 
 HEADERS += \
     CRC_Software_calculation.h \
@@ -23,14 +25,18 @@ HEADERS += \
     calc_line_2_points.h \
     hex_to_float_double.h \
     mainwindow.h \
-    rtd_calculator_resistance_to_temperature.h
+    rtd_calculator_resistance_to_temperature.h \
+    signal_converter.h \
+    thermocouple_calculator.h
 
 FORMS += \
     about.ui \
     calc_line_2_points.ui \
     hex_to_float_double.ui \
     mainwindow.ui \
-    rtd_calculator_resistance_to_temperature.ui
+    rtd_calculator_resistance_to_temperature.ui \
+    signal_converter.ui \
+    thermocouple_calculator.ui
 
 RC_ICONS = app1.ico
 

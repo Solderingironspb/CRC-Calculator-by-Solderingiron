@@ -34,7 +34,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>CRC Calculator by Solderingiron v1.0.3</string>
+   <string>CRC Calculator by Solderingiron v1.0.4</string>
   </property>
   <property name="windowIcon">
    <iconset resource="images.qrc">
@@ -65,7 +65,6 @@ background-color: rgb(217, 234, 252);}</string>
         <property name="font">
          <font>
           <pointsize>10</pointsize>
-          <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
@@ -416,7 +415,6 @@ QGroupBox::title {
              </property>
              <property name="font">
               <font>
-               <family>Consolas</family>
                <pointsize>11</pointsize>
               </font>
              </property>
@@ -447,7 +445,6 @@ QGroupBox::title {
             <widget class="QLineEdit" name="lineEdit_Initial_value">
              <property name="font">
               <font>
-               <family>Consolas</family>
                <pointsize>11</pointsize>
               </font>
              </property>
@@ -478,7 +475,6 @@ QGroupBox::title {
             <widget class="QLineEdit" name="lineEdit_Final_XOR_value">
              <property name="font">
               <font>
-               <family>Consolas</family>
                <pointsize>11</pointsize>
               </font>
              </property>
@@ -517,7 +513,6 @@ QGroupBox::title {
      <widget class="QTextEdit" name="textEdit">
       <property name="font">
        <font>
-        <family>Consolas</family>
         <pointsize>10</pointsize>
        </font>
       </property>
@@ -560,7 +555,6 @@ QGroupBox::title {
        <widget class="QLineEdit" name="lineEdit">
         <property name="font">
          <font>
-          <family>Consolas</family>
           <pointsize>11</pointsize>
          </font>
         </property>
@@ -595,7 +589,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <pointsize>11</pointsize>
-          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -639,7 +632,6 @@ QPushButton:flat {
         </property>
         <property name="font">
          <font>
-          <family>Consolas</family>
           <pointsize>11</pointsize>
          </font>
         </property>
@@ -665,7 +657,7 @@ QPushButton:flat {
      <x>0</x>
      <y>0</y>
      <width>789</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -681,6 +673,8 @@ QPushButton:flat {
     <addaction name="action_2"/>
     <addaction name="action_3"/>
     <addaction name="action_RTD_Calculator"/>
+    <addaction name="action_Thermocouple_Calculator"/>
+    <addaction name="action_Signal_Converter"/>
    </widget>
    <addaction name="menu_2"/>
    <addaction name="menu"/>
@@ -732,6 +726,30 @@ QPushButton:flat {
    </property>
    <property name="shortcut">
     <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="action_Thermocouple_Calculator">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/app5.png</normaloff>:/app5.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thermocouple Calculator</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="action_Signal_Converter">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/app6.png</normaloff>:/app6.png</iconset>
+   </property>
+   <property name="text">
+    <string>Signal Converter(0-10v and 4-20mA)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
    </property>
   </action>
  </widget>
