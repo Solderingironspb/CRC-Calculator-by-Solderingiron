@@ -29,7 +29,7 @@
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/032df576-3264-4f62-ba39-f1e8b79c4a9c)
 ###
 ### Thermocouple Calculator
-Расчеты ведутся согласно ГОСТ 6651-2009
+Расчеты ведутся согласно ГОСТ Р 8.85-2001
 
 * Поддерживаемые термопары:
   - R ТПП (Платина - 13% родий/платина)
