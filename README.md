@@ -1,4 +1,4 @@
-# CRC-Calculator-by-Solderingiron v1.0.4
+# CRC-Calculator-by-Solderingiron v1.0.5
 ### Программа для расчета контрольной суммы: CRC8, CRC16, CRC32 + Мини-программы(дополняются)
 #### Основное окно 
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/4579d266-b79a-445c-9944-4e42a4d184af)
@@ -50,8 +50,16 @@
 Конвертирование аналоговых сигналов 0-10 В и 4-20 мА. Имеется возможность, как узнать измеряемую величину при замере датчика, так и рассчитать требуемое значение выходных параметров при заданном значении.
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/7d00bc49-769b-40ea-81b2-57bd630251c4)
 
+###
+### Curves for PWM
+С помощью данных вычислений можно красиво померцать светодиодом, отрегулировать подсветку дисплея и много другое. Все для того, чтоб глаз воспринимал разгарание линейно, хотя на самом деле управление будет происходить экспоненциально. Весьма полезная штука.
+![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/5d90b3f9-4a0a-4b79-ae81-54e8b42f4ae8)
+![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/de4e6546-a52c-4c53-85de-43c752d4ffdf)
+
+
+
 ## Ссылки:
-#### Скачать последнюю версию программы: https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.4/CRC_calculator.v1.0.4.zip
+#### Скачать последнюю версию программы: https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.5/CRC_calculator.v1.0.5.zip
 #### Программа для реализации расчета CRC-8, CRC-16,CRC-32 на языке Си: https://github.com/Solderingironspb/CRC_Software_calculation
 #### Библиотека для работы с термосопротивлениями на языке Си: https://github.com/Solderingironspb/rtd_calculator
 #### Библиотека для работы с термопарами на языке Си: https://github.com/Solderingironspb/thermocouple_calculator
