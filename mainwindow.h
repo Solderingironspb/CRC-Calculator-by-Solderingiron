@@ -7,6 +7,7 @@
 #include "rtd_calculator_resistance_to_temperature.h"
 #include "thermocouple_calculator.h"
 #include "signal_converter.h"
+#include "curves_for_pwm.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -28,6 +29,7 @@ private slots:
     void on_action_RTD_Calculator_triggered();
     void on_action_Thermocouple_Calculator_triggered();
     void on_action_Signal_Converter_triggered();
+    void on_action_Curves_for_PWM_triggered();
 
     void on_pushButton_clicked();
 
@@ -52,6 +54,7 @@ private:
     RTD_Calculator_Resistance_to_Temperature RTD_calculator;
     thermocouple_calculator THERMOCOUPLE_calculator;
     signal_converter SIGNAL_converter;
+    curves_for_pwm CURVES_for_pwm;
 
 };
 #endif // MAINWINDOW_H

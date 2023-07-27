@@ -1,6 +1,7 @@
 debug/CRC_Software_calculation.o
 debug/about.o
 debug/calc_line_2_points.o
+debug/curves_for_pwm.o
 debug/hex_to_float_double.o
 debug/main.o
 debug/mainwindow.o
@@ -10,6 +11,7 @@ debug/thermocouple_calculator.o
 debug/qrc_images.o
 debug/moc_about.o
 debug/moc_calc_line_2_points.o
+debug/moc_curves_for_pwm.o
 debug/moc_hex_to_float_double.o
 debug/moc_mainwindow.o
 debug/moc_rtd_calculator_resistance_to_temperature.o

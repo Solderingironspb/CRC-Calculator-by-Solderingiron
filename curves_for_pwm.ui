@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>curves_for_pwm</class>
+ <widget class="QMainWindow" name="curves_for_pwm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>880</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Curves for PWM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/app7.png</normaloff>:/app7.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5"/>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2"/>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Описание:</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="images.qrc">:/curves.PNG</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;В жизни не все линейно.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;По закону, открытому немецким анатомом и физиологом Эрнстом Вебером и сформулированному немецким же физиком и психологом Густавом Фехнером, величина ощущений человека и амплитуда вызвавшего их раздражения связаны логарифмической формулой. Данный закон справедлив для всех видов ощущений человека: слуха, зрения, обоняния, осязания. Закон Вебера — Фехнера звучит так: «Сила ощущения пропорциональна логарифму силы раздражения». Согласно этому закону воспринимаемая громкость звука также пропорциональна логарифму его интенсивности (в частности, логарифму мощности колонок). Поэтому на амплитудно-частотных характеристиках звуковоспроизводящих устройств применяют логарифмический масштаб по обеим осям.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#aa0000;&quot;&gt;Источник. Википедия :)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#aa0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Сталкивались с потенциометрами?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Есть три вида потенциометров, систематизированные по характеру изменения сопротивления:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Линейные потенциометры, которые обозначаются буквой A. Сопротивление изменяется прямо пропорционально углу поворота скользящего контакта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Логарифмические потенциометры, обозначаемые буквой B. Сначала сопротивление изменяется быстро, а затем происходит медленнее.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Экспоненциальные потенциометры (изменение сопротивления по экспоненте), которые обычно обозначаются буквой C. Сначала сопротивление изменяется медленно, а затем становится быстрее, в отличие от логарифмических потенциометров.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Важно обратить внимание на тот факт, что потенциометры не всегда обозначаются буквами A, B или C. Обозначения зависят от производителей самих потенциометров, именно поэтому необходимо внимательно читать описание к каждому конкретному экземпляру.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Подбор коэффициента:</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QTextEdit" name="textEdit_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Обычно для управления чего-либо хватает целочисленной процентной шкалы 0-100%. Тут нам помогут массивы с заранее посчитанными значениями.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Но если Вы желаете получить более гибкое управление - придется нагрузить микроконтроллер математикой. Формулы кривых представлены на рисунке сверху. Введите значение регистра (регистр TIMx_ARR), который Вы настроили в таймере и нажмите &amp;quot;подобрать коэффициент&amp;quot;. &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;После подбора можно рисовать кривую с данным коэффициентом. Справа появятся массивы кривых для данной размерности TIMx_ARR. Можно их использовать для формул в процентном управлениее (0-100%). Пример кода на языке Си для МК STM32F103C8T6 указан ниже.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>TIMx auto-reload register (TIMx_ARR):</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>k =</string>
+                 </property>
+                 <property name="textFormat">
+                  <enum>Qt::AutoText</enum>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>false</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_CNT">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>0 - 65535</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Подобрать коэффициент</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Пример кода на языке Си:</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTextEdit" name="textEdit_3">
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Consolas'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#7f0055;&quot;&gt;#include&lt;/span&gt; &lt;span style=&quot; color:#2800e6;&quot;&gt;&amp;quot;main.h&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#7f0055;&quot;&gt;#include&lt;/span&gt; &lt;span style=&quot; color:#2800e6;&quot;&gt;&amp;quot;stm32f103xx_CMSIS.h&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#7f0055;&quot;&gt;#include&lt;/span&gt; &lt;span style=&quot; color:#2800e6;&quot;&gt;&amp;lt;stdbool.h&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#aa5500;&quot;&gt;bool&lt;/span&gt; flag_direction = &lt;span style=&quot; color:#aa5500;&quot;&gt;true&lt;/span&gt;; &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Up/Down&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint32_t&lt;/span&gt; Delay = &lt;span style=&quot; color:#008092;&quot;&gt;100&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint8_t&lt;/span&gt; Persent = &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;; &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//от 0 до 100&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#7f0055;&quot;&gt;enum&lt;/span&gt; {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    Curves_linear, &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    Curves_logarithmic, &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    Curves_exponential&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;};&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint8_t&lt;/span&gt; Curves = Curves_exponential; &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Вид кривой&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; PWM_exp = &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; PWM_log = &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; PWM_lin = &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; Value_PWM = &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Характеристика потенциометра типа С (Управление от 0 до 100%):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; Curves_exp[&lt;span style=&quot; color:#008092;&quot;&gt;101&lt;/span&gt;] = { &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 62&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 65&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 68&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 71&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 75&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 79&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 82&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 86&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 90&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 95&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 99&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 104&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 109&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 114&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 119&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 125&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 131&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 137&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 143&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 150&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 157&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 165&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 173&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 181&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 189&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 198&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 208&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 217&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 228&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 238&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 250&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 262&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 274&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 287&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 301&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 314&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#008092;&quot;&gt;329&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 345&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 361&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 379&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 397&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 415&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 434&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 455&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 476&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 499&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 523&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 547&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 573&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 601&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 629&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 658&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 689&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 722&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 756&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 792&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 829&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 868&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 909&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 952&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 997&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1044&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1093&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1145&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1199&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1256&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1314&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1377&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1442&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1509&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1581&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1655&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#008092;&quot;&gt;1734&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1815&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1901&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1991&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2085&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2183&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2286&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2394&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2506&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2625&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2749&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2878&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3014&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3156&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3305&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3461&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3624&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3795&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3974&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4162&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4358&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4564&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4779&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5004&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5240&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5487&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5747&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5999 &lt;/span&gt;};&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Характеристика потенциометра типа B (Управление от 0 до 100%):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; Curves_log[&lt;span style=&quot; color:#008092;&quot;&gt;101&lt;/span&gt;] = { &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 59&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 902&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1430&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1804&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2094&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2332&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2533&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2706&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2860&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2997&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3121&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3234&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3339&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3435&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3525&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3609&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3688&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3762&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3832&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3899&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3963&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4024&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4081&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4136&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4190&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4241&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4290&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4337&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4383&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4427&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4470&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4511&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4551&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4590&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4628&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4664&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4700&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4735&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4769&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4802&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4833&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4865&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4896&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4926&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4955&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4983&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5012&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5039&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5066&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5092&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5118&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5143&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5168&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5192&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5216&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5240&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5262&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5285&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5307&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5330&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5351&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5372&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5393&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5414&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5433&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5454&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5473&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5492&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5511&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5530&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5549&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5567&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5585&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5603&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5620&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5637&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5654&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5671&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5688&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5704&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5720&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5736&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5752&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5768&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5783&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5798&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5813&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5828&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5843&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5858&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5872&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5886&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5900&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5914&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5928&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5942&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5955&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5968&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5981&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5999&lt;/span&gt; };&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Характеристика потенциометра типа A (Управление от 0 до 100%):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#003e00;&quot;&gt;uint16_t&lt;/span&gt; Curves_lin[&lt;span style=&quot; color:#008092;&quot;&gt;101&lt;/span&gt;] = { &lt;span style=&quot; color:#008092;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 59&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 119&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 179&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 239&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 299&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 359&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 419&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 479&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 539&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 599&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 659&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 719&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 779&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 839&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 899&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 959&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1019&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1079&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1139&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1199&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1259&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1319&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1379&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1439&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1499&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1559&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1619&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1679&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1739&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1799&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1859&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1919&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 1979&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2039&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2099&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2159&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2219&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2279&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2339&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2399&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2459&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2519&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2579&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2639&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2699&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2759&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2819&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2879&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2939&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 2999&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3059&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3119&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3179&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3239&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3299&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3359&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3419&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3479&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3539&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3599&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3659&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3719&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3779&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3839&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3899&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 3959&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4019&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4079&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4139&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4199&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4259&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4319&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4379&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4439&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4499&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4559&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4619&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4679&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4739&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4799&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4859&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4919&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 4979&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5039&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5099&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5159&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5219&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5279&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5339&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5399&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5459&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5519&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5579&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5639&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5699&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5759&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5819&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5879&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5939&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#008092;&quot;&gt; 5999&lt;/span&gt; };&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#7f0055;&quot;&gt;int&lt;/span&gt; main(&lt;span style=&quot; color:#7f0055;&quot;&gt;void&lt;/span&gt;) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    CMSIS_Debug_init(); &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Настройка дебага&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    CMSIS_RCC_SystemClock_72MHz(); &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Настройка МК на 72 МГц&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    CMSIS_SysTick_Timer_init(); &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Настройка системного таймера&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    CMSIS_TIM3_init(); &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Настройка таймера 3&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    CMSIS_TIM3_PWM_CHANNEL1_init(); &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Запуск ШИМ. Таймер 3. Канал 1. Ножка PA6 &lt;/span&gt;  &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;   &lt;span style=&quot; color:#7f0055;&quot;&gt; while&lt;/span&gt; (&lt;span style=&quot; color:#008092;&quot;&gt;1&lt;/span&gt;) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        PWM_lin = Curves_lin[Persent]; &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Логарифмическая зависимость&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        PWM_log = Curves_log[Persent]; &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Логарифмическая зависимость&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        PWM_exp = Curves_exp[Persent]; &lt;span style=&quot; color:#3f7f5f;&quot;&gt;//Экспоненциальная зависимость&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       &lt;span style=&quot; color:#7f0055;&quot;&gt;if&lt;/span&gt; (Curves == Curves_linear) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;span style=&quot; color:#aa5500;&quot;&gt;TIM3&lt;/span&gt;-&amp;gt;&lt;span style=&quot; color:#2800e6;&quot;&gt;CCR1&lt;/span&gt; = PWM_lin;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        } &lt;span style=&quot; color:#7f0055;&quot;&gt;else if&lt;/span&gt; (Curves == Curves_logarithmic) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;span style=&quot; color:#aa5500;&quot;&gt;TIM3&lt;/span&gt;-&amp;gt;&lt;span style=&quot; color:#2800e6;&quot;&gt;CCR1&lt;/span&gt; = PWM_log;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        } &lt;span style=&quot; color:#7f0055;&quot;&gt;else if&lt;/span&gt; (Curves == Curves_exponential) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;span style=&quot; color:#aa5500;&quot;&gt;TIM3&lt;/span&gt;-&amp;gt;&lt;span style=&quot; color:#2800e6;&quot;&gt;CCR1&lt;/span&gt; = PWM_exp;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        }&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        &lt;span style=&quot; color:#7f0055;&quot;&gt;if&lt;/span&gt; (flag_direction) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            Persent++;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;           &lt;span style=&quot; color:#7f0055;&quot;&gt; if&lt;/span&gt; (Persent &amp;gt;= &lt;span style=&quot; color:#008092;&quot;&gt;100&lt;/span&gt;) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                Persent == &lt;span style=&quot; color:#008092;&quot;&gt;100&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                flag_direction = &lt;span style=&quot; color:#aa5500;&quot;&gt;false&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            }&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        } &lt;span style=&quot; color:#7f0055;&quot;&gt;else&lt;/span&gt; {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            Persent--;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;span style=&quot; color:#7f0055;&quot;&gt;if&lt;/span&gt; (Persent &amp;lt;= &lt;span style=&quot; color:#008092;&quot;&gt;1&lt;/span&gt;) {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                Persent == &lt;span style=&quot; color:#008092;&quot;&gt;1&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                flag_direction = &lt;span style=&quot; color:#aa5500;&quot;&gt;true&lt;/span&gt;;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            }&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        }&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        Delay_ms(Delay);&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    }&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;}&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string>Массивы для управления в процентах(0-100%):</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QTextEdit" name="textEdit_4">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTextEdit{
+
+    border: 1px solid #97c3f3;
+    border-radius: 2px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FFFFFF, stop: 1 #FFFFFF);
+   
+}</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas UI';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1127</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

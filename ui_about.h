@@ -81,6 +81,7 @@ public:
         QFont font;
         font.setPointSize(14);
         font.setBold(true);
+        font.setWeight(75);
         label->setFont(font);
 
         verticalLayout->addWidget(label);
@@ -90,6 +91,7 @@ public:
         QFont font1;
         font1.setPointSize(11);
         font1.setBold(true);
+        font1.setWeight(75);
         label_2->setFont(font1);
 
         verticalLayout->addWidget(label_2);
@@ -182,22 +184,22 @@ public:
         About->setWindowTitle(QCoreApplication::translate("About", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
         label->setText(QCoreApplication::translate("About", "Solderingiron CRC Calculator", nullptr));
         label_2->setText(QCoreApplication::translate("About", "\320\237\320\276\320\264\321\201\321\207\320\265\321\202 CRC - 8, CRC - 16, CRC - 32", nullptr));
-        label_3->setText(QCoreApplication::translate("About", "V 1.0.4", nullptr));
+        label_3->setText(QCoreApplication::translate("About", "V 1.0.5", nullptr));
         groupBox->setTitle(QCoreApplication::translate("About", "\320\230\320\275\321\204\320\276", nullptr));
         textBrowser->setHtml(QCoreApplication::translate("About", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">\302\251 2023 \320\222\320\276\320\273\320\272\320\276\320\262 \320\236\320\273\320\265\320\263 </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">\320\233\320\270\321\206\320\265\320\275\320\267\320\270\321\217: GNU GENERAL PUBLIC LICENSE</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin"
-                        "-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">e-mail: solderingiron.notification@yandex.ru</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">Git: https://github.com/Solderingironspb/</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\275\320\260\321\217 \321\200\320\265\320\260\320\273\320\270\320\267\320\260\321\206\320\270\321\217 \320\277\320\276\320\264\321\201\321\207\320\265\321\202\320\260 CRC \320\275\320\260 \321\217\320\267\321\213\320\272\320\265 \320\241\320\270: </span><span style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; color:#0000ff;\">https://github.com/S"
-                        "olderingironspb/CRC_software_calculation</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">\320\224\320\260\320\275\320\275\320\260\321\217 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260 \321\201\320\276\320\264\320\265\321\200\320\266\320\270\321\202 \320\262 \321\201\320\265\320\261\320\265 \320\262\321\201\320\277\320\276\320\274\320\276\320\263\320\260\321\202\320\265\320\273\321\214\320\275\321\213\320\265 \320\274\320\270\320\275\320\270-\320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\321\213, \320\272\320\276\321\202\320\276\321\200\321\213\320\265 \320\261\321\213\320\262\320\260\321\216\321\202 \320\277\320\276\320\273\320\265\320\267\320\275\321\213 \320\277\321\200\320\270 \321\200\320\260\320\267\321\200\320\260\320\261\320\276\321\202\320\272\320\265 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320"
-                        "\275\320\270\320\271 \320\275\320\260 \320\274\320\270\320\272\321\200\320\276\320\272\320\276\320\275\321\202\321\200\320\276\320\273\320\273\320\265\321\200\320\260\321\205.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt;\">\320\241\321\201\321\213\320\273\320\272\320\260 \320\275\320\260 \320\277\321\200\320\276\320\265\320\272\321\202: </span><span style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; color:#0000ff;\">https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\302\251 2023 \320\222\320\276\320\273\320\272\320\276\320\262 \320\236\320\273\320\265\320\263 </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\233\320\270\321\206\320\265\320\275\320\267\320\270\321\217: GNU GENERAL PUBLIC LICENSE</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:1"
+                        "0pt;\">e-mail: solderingiron.notification@yandex.ru</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Git: https://github.com/Solderingironspb/</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\275\320\260\321\217 \321\200\320\265\320\260\320\273\320\270\320\267\320\260\321\206\320\270\321\217 \320\277\320\276\320\264\321\201\321\207\320\265\321\202\320\260 CRC \320\275\320\260 \321\217\320\267\321\213\320\272\320\265 \320\241\320\270: </span><span style=\" color:#0000ff;\">https://github.com/Solderingironspb/CRC_software_calculation</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320"
+                        "\224\320\260\320\275\320\275\320\260\321\217 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260 \321\201\320\276\320\264\320\265\321\200\320\266\320\270\321\202 \320\262 \321\201\320\265\320\261\320\265 \320\262\321\201\320\277\320\276\320\274\320\276\320\263\320\260\321\202\320\265\320\273\321\214\320\275\321\213\320\265 \320\274\320\270\320\275\320\270-\320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\321\213, \320\272\320\276\321\202\320\276\321\200\321\213\320\265 \320\261\321\213\320\262\320\260\321\216\321\202 \320\277\320\276\320\273\320\265\320\267\320\275\321\213 \320\277\321\200\320\270 \321\200\320\260\320\267\321\200\320\260\320\261\320\276\321\202\320\272\320\265 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\320\271 \320\275\320\260 \320\274\320\270\320\272\321\200\320\276\320\272\320\276\320\275\321\202\321\200\320\276\320\273\320\273\320\265\321\200\320\260\321\205.</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; mar"
+                        "gin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\320\241\321\201\321\213\320\273\320\272\320\260 \320\275\320\260 \320\277\321\200\320\276\320\265\320\272\321\202: </span><span style=\" font-size:10pt; color:#0000ff;\">https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron</span></p></body></html>", nullptr));
         label_9->setText(QString());
     } // retranslateUi
 

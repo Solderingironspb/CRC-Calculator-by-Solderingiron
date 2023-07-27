@@ -12,6 +12,7 @@ SOURCES += \
     CRC_Software_calculation.cpp \
     about.cpp \
     calc_line_2_points.cpp \
+    curves_for_pwm.cpp \
     hex_to_float_double.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -23,6 +24,7 @@ HEADERS += \
     CRC_Software_calculation.h \
     about.h \
     calc_line_2_points.h \
+    curves_for_pwm.h \
     hex_to_float_double.h \
     mainwindow.h \
     rtd_calculator_resistance_to_temperature.h \
@@ -32,6 +34,7 @@ HEADERS += \
 FORMS += \
     about.ui \
     calc_line_2_points.ui \
+    curves_for_pwm.ui \
     hex_to_float_double.ui \
     mainwindow.ui \
     rtd_calculator_resistance_to_temperature.ui \

@@ -43,6 +43,7 @@ public:
     QAction *action_RTD_Calculator;
     QAction *action_Thermocouple_Calculator;
     QAction *action_Signal_Converter;
+    QAction *action_Curves_for_PWM;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout_3;
@@ -139,6 +140,11 @@ public:
         QIcon icon6;
         icon6.addFile(QString::fromUtf8(":/app6.png"), QSize(), QIcon::Normal, QIcon::Off);
         action_Signal_Converter->setIcon(icon6);
+        action_Curves_for_PWM = new QAction(MainWindow);
+        action_Curves_for_PWM->setObjectName(QString::fromUtf8("action_Curves_for_PWM"));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/app7.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_Curves_for_PWM->setIcon(icon7);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout_4 = new QVBoxLayout(centralwidget);
@@ -156,6 +162,7 @@ public:
         QFont font1;
         font1.setPointSize(10);
         font1.setBold(false);
+        font1.setWeight(50);
         groupBox->setFont(font1);
         groupBox->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
@@ -470,6 +477,7 @@ public:
         QFont font3;
         font3.setPointSize(11);
         font3.setBold(true);
+        font3.setWeight(75);
         pushButton->setFont(font3);
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border: 1px solid #97c3f3;\n"
@@ -515,7 +523,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 789, 22));
+        menubar->setGeometry(QRect(0, 0, 789, 21));
         menu = new QMenu(menubar);
         menu->setObjectName(QString::fromUtf8("menu"));
         menu_2 = new QMenu(menubar);
@@ -533,6 +541,7 @@ public:
         menu_2->addAction(action_RTD_Calculator);
         menu_2->addAction(action_Thermocouple_Calculator);
         menu_2->addAction(action_Signal_Converter);
+        menu_2->addAction(action_Curves_for_PWM);
 
         retranslateUi(MainWindow);
 
@@ -541,7 +550,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.4", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.5", nullptr));
         action->setText(QCoreApplication::translate("MainWindow", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
 #if QT_CONFIG(shortcut)
         action->setShortcut(QCoreApplication::translate("MainWindow", "F1", nullptr));
@@ -565,6 +574,10 @@ public:
         action_Signal_Converter->setText(QCoreApplication::translate("MainWindow", "Signal Converter(0-10v and 4-20mA)", nullptr));
 #if QT_CONFIG(shortcut)
         action_Signal_Converter->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+5", nullptr));
+#endif // QT_CONFIG(shortcut)
+        action_Curves_for_PWM->setText(QCoreApplication::translate("MainWindow", "\320\241urves for PWM", nullptr));
+#if QT_CONFIG(shortcut)
+        action_Curves_for_PWM->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+6", nullptr));
 #endif // QT_CONFIG(shortcut)
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "CRC width", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Bit lenght:", nullptr));

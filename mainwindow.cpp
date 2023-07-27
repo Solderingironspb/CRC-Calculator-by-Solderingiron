@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include "CRC_Software_calculation.h"
+#include "curves_for_pwm.h"
 
 #include "about.h"
 
@@ -62,6 +63,9 @@ void MainWindow::on_action_Signal_Converter_triggered(){
     SIGNAL_converter.show();
 }
 
+void MainWindow::on_action_Curves_for_PWM_triggered(){
+    CURVES_for_pwm.show();
+}
 
 
 

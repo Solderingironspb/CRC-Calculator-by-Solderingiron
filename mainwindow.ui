@@ -34,7 +34,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>CRC Calculator by Solderingiron v1.0.4</string>
+   <string>CRC Calculator by Solderingiron v1.0.5</string>
   </property>
   <property name="windowIcon">
    <iconset resource="images.qrc">
@@ -65,6 +65,7 @@ background-color: rgb(217, 234, 252);}</string>
         <property name="font">
          <font>
           <pointsize>10</pointsize>
+          <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
@@ -589,6 +590,7 @@ QGroupBox::title {
         <property name="font">
          <font>
           <pointsize>11</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -657,7 +659,7 @@ QPushButton:flat {
      <x>0</x>
      <y>0</y>
      <width>789</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -675,6 +677,7 @@ QPushButton:flat {
     <addaction name="action_RTD_Calculator"/>
     <addaction name="action_Thermocouple_Calculator"/>
     <addaction name="action_Signal_Converter"/>
+    <addaction name="action_Curves_for_PWM"/>
    </widget>
    <addaction name="menu_2"/>
    <addaction name="menu"/>
@@ -750,6 +753,18 @@ QPushButton:flat {
    </property>
    <property name="shortcut">
     <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="action_Curves_for_PWM">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/app7.png</normaloff>:/app7.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сurves for PWM</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+6</string>
    </property>
   </action>
  </widget>
