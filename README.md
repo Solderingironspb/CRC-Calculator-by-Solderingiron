@@ -1,13 +1,13 @@
-# CRC-Calculator-by-Solderingiron v1.0.6
+# CRC-Calculator-by-Solderingiron v1.0.7
 ### Программа для расчета контрольной суммы: CRC8, CRC16, CRC32 + Мини-программы(дополняются)
 #### Основное окно 
-![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/4579d266-b79a-445c-9944-4e42a4d184af)
+![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/dde8d019-102d-46ee-b5f2-4d018f532d26)
 #### О программе
-![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/40cf0003-c57e-4506-862c-5710b49222df)
+![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/2dd21398-f0de-4813-9562-862b00432a50)
 #
 ## Мини-программы
 ### Уравнение прямой по 2 точкам
-![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/45866ca9-737e-44d0-bffc-832a75422e17)
+![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/b61b4ec8-2c12-49f2-a8c6-c82dc76fee79)
 ###
 ### Конвертер HEX в числа с плавающей точкой и наоборот
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/f76542c3-dd3e-430a-b840-7ef0bd006397)
@@ -56,10 +56,17 @@
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/5d90b3f9-4a0a-4b79-ae81-54e8b42f4ae8)
 ![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/de4e6546-a52c-4c53-85de-43c752d4ffdf)
 
+###
+### STM32 TIMx Calculator
+Простенькая утилита, которая поможет быстренько подобрать значения регистров PSC, ARR, чтоб получить нужную частоту таймера.
+![image](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/assets/68805120/9dbaee33-2832-4b02-8c0f-e7dc88b64f9b)
+
 
 
 ## Ссылки:
-#### Скачать последнюю версию программы: https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.6/CRC_calculator.v1.0.6.zip
+#### Скачать последнюю версию программы: https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.7
+#### [CRC_calculator_win_v1.0.7_x86.zip](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.7/CRC_calculator_win_v1.0.7_x86.zip)
+#### [CRC_calculator_win_v1.0.7_x64.zip](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.7/CRC_calculator_win_v1.0.7_x64.zip)
 #### Программа для реализации расчета CRC-8, CRC-16,CRC-32 на языке Си: https://github.com/Solderingironspb/CRC_Software_calculation
 #### Библиотека для работы с термосопротивлениями на языке Си: https://github.com/Solderingironspb/rtd_calculator
 #### Библиотека для работы с термопарами на языке Си: https://github.com/Solderingironspb/thermocouple_calculator
