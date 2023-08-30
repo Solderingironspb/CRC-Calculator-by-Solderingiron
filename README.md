@@ -64,7 +64,7 @@
 
 
 ## Ссылки:
-#### Скачать последнюю версию программы: https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.7
+#### Скачать последнюю версию программы: https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases
 #### [CRC_calculator_win_v1.0.7_x86.zip](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.7/CRC_calculator_win_v1.0.7_x86.zip)
 #### [CRC_calculator_win_v1.0.7_x64.zip](https://github.com/Solderingironspb/CRC-Calculator-by-Solderingiron/releases/download/v1.0.7/CRC_calculator_win_v1.0.7_x64.zip)
 #### Программа для реализации расчета CRC-8, CRC-16,CRC-32 на языке Си: https://github.com/Solderingironspb/CRC_Software_calculation
