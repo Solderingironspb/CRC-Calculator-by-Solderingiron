@@ -8,6 +8,7 @@
 #include "thermocouple_calculator.h"
 #include "signal_converter.h"
 #include "curves_for_pwm.h"
+#include "pwm_hz.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,6 +31,7 @@ private slots:
     void on_action_Thermocouple_Calculator_triggered();
     void on_action_Signal_Converter_triggered();
     void on_action_Curves_for_PWM_triggered();
+    void on_action_TIMx_Calculator_triggered();
 
     void on_pushButton_clicked();
 
@@ -47,6 +49,8 @@ private slots:
 
     void on_radioButton_Custom_clicked();
 
+
+
 private:
     Ui::MainWindow *ui;
     calc_line_2_points calc_line_2_points;
@@ -55,6 +59,7 @@ private:
     thermocouple_calculator THERMOCOUPLE_calculator;
     signal_converter SIGNAL_converter;
     curves_for_pwm CURVES_for_pwm;
+    PWM_HZ STM32PWM;
 
 };
 #endif // MAINWINDOW_H

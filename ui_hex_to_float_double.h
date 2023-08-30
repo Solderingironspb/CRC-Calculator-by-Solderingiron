@@ -85,13 +85,13 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         lineEdit_float_hex = new QLineEdit(groupBox);
         lineEdit_float_hex->setObjectName(QString::fromUtf8("lineEdit_float_hex"));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(lineEdit_float_hex->sizePolicy().hasHeightForWidth());
         lineEdit_float_hex->setSizePolicy(sizePolicy);
         lineEdit_float_hex->setMinimumSize(QSize(170, 0));
-        lineEdit_float_hex->setMaximumSize(QSize(170, 16777215));
+        lineEdit_float_hex->setMaximumSize(QSize(500, 16777215));
         QFont font;
         font.setFamily(QString::fromUtf8("Consolas"));
         font.setPointSize(11);
@@ -104,7 +104,7 @@ public:
         sizePolicy.setHeightForWidth(lineEdit_float_value->sizePolicy().hasHeightForWidth());
         lineEdit_float_value->setSizePolicy(sizePolicy);
         lineEdit_float_value->setMinimumSize(QSize(170, 0));
-        lineEdit_float_value->setMaximumSize(QSize(170, 16777215));
+        lineEdit_float_value->setMaximumSize(QSize(500, 16777215));
         lineEdit_float_value->setFont(font);
 
         gridLayout->addWidget(lineEdit_float_value, 1, 1, 1, 1);
@@ -114,7 +114,7 @@ public:
         sizePolicy.setHeightForWidth(pushButton_convert_to_hex_f->sizePolicy().hasHeightForWidth());
         pushButton_convert_to_hex_f->setSizePolicy(sizePolicy);
         pushButton_convert_to_hex_f->setMinimumSize(QSize(110, 0));
-        pushButton_convert_to_hex_f->setMaximumSize(QSize(110, 16777215));
+        pushButton_convert_to_hex_f->setMaximumSize(QSize(500, 16777215));
         QFont font1;
         font1.setPointSize(10);
         pushButton_convert_to_hex_f->setFont(font1);
@@ -123,7 +123,7 @@ public:
 
         label = new QLabel(groupBox);
         label->setObjectName(QString::fromUtf8("label"));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
@@ -149,7 +149,7 @@ public:
         sizePolicy.setHeightForWidth(pushButton_convert_to_float->sizePolicy().hasHeightForWidth());
         pushButton_convert_to_float->setSizePolicy(sizePolicy);
         pushButton_convert_to_float->setMinimumSize(QSize(110, 0));
-        pushButton_convert_to_float->setMaximumSize(QSize(110, 16777215));
+        pushButton_convert_to_float->setMaximumSize(QSize(500, 16777215));
         pushButton_convert_to_float->setFont(font1);
 
         gridLayout->addWidget(pushButton_convert_to_float, 0, 2, 1, 1);
@@ -180,7 +180,7 @@ public:
         sizePolicy.setHeightForWidth(lineEdit_Double_hex->sizePolicy().hasHeightForWidth());
         lineEdit_Double_hex->setSizePolicy(sizePolicy);
         lineEdit_Double_hex->setMinimumSize(QSize(170, 0));
-        lineEdit_Double_hex->setMaximumSize(QSize(170, 16777215));
+        lineEdit_Double_hex->setMaximumSize(QSize(500, 16777215));
         lineEdit_Double_hex->setFont(font);
 
         gridLayout_2->addWidget(lineEdit_Double_hex, 0, 1, 1, 1);
@@ -200,7 +200,7 @@ public:
         sizePolicy.setHeightForWidth(pushButton_Convert_to_hex_d->sizePolicy().hasHeightForWidth());
         pushButton_Convert_to_hex_d->setSizePolicy(sizePolicy);
         pushButton_Convert_to_hex_d->setMinimumSize(QSize(110, 0));
-        pushButton_Convert_to_hex_d->setMaximumSize(QSize(110, 16777215));
+        pushButton_Convert_to_hex_d->setMaximumSize(QSize(500, 16777215));
         pushButton_Convert_to_hex_d->setFont(font1);
 
         gridLayout_2->addWidget(pushButton_Convert_to_hex_d, 1, 2, 1, 1);
@@ -220,7 +220,7 @@ public:
         sizePolicy.setHeightForWidth(lineEdit_Double_value->sizePolicy().hasHeightForWidth());
         lineEdit_Double_value->setSizePolicy(sizePolicy);
         lineEdit_Double_value->setMinimumSize(QSize(170, 0));
-        lineEdit_Double_value->setMaximumSize(QSize(170, 16777215));
+        lineEdit_Double_value->setMaximumSize(QSize(500, 16777215));
         lineEdit_Double_value->setFont(font);
 
         gridLayout_2->addWidget(lineEdit_Double_value, 1, 1, 1, 1);
@@ -230,7 +230,7 @@ public:
         sizePolicy.setHeightForWidth(pushButton_convert_to_double->sizePolicy().hasHeightForWidth());
         pushButton_convert_to_double->setSizePolicy(sizePolicy);
         pushButton_convert_to_double->setMinimumSize(QSize(110, 0));
-        pushButton_convert_to_double->setMaximumSize(QSize(110, 16777215));
+        pushButton_convert_to_double->setMaximumSize(QSize(500, 16777215));
         pushButton_convert_to_double->setFont(font1);
 
         gridLayout_2->addWidget(pushButton_convert_to_double, 0, 2, 1, 1);

@@ -44,7 +44,10 @@ public:
     QAction *action_Thermocouple_Calculator;
     QAction *action_Signal_Converter;
     QAction *action_Curves_for_PWM;
+    QAction *action_TIMx_Calculator;
     QWidget *centralwidget;
+    QVBoxLayout *verticalLayout_5;
+    QHBoxLayout *horizontalLayout_6;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout_3;
     QGroupBox *groupBox;
@@ -54,7 +57,6 @@ public:
     QRadioButton *radioButton_CRC8;
     QRadioButton *radioButton_CRC16;
     QRadioButton *radioButton_3;
-    QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout_4;
     QGroupBox *groupBox_2;
     QVBoxLayout *verticalLayout_2;
@@ -62,7 +64,6 @@ public:
     QRadioButton *radioButton_Predefined;
     QComboBox *comboBox;
     QRadioButton *radioButton_Custom;
-    QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *horizontalLayout_5;
     QGroupBox *groupBox_3;
     QVBoxLayout *verticalLayout_3;
@@ -77,7 +78,7 @@ public:
     QLineEdit *lineEdit_Initial_value;
     QLabel *label_6;
     QLineEdit *lineEdit_Final_XOR_value;
-    QSpacerItem *horizontalSpacer_4;
+    QSpacerItem *horizontalSpacer_2;
     QTextEdit *textEdit;
     QGridLayout *gridLayout_2;
     QLabel *label;
@@ -94,7 +95,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(789, 669);
+        MainWindow->resize(790, 731);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -145,24 +146,33 @@ public:
         QIcon icon7;
         icon7.addFile(QString::fromUtf8(":/app7.png"), QSize(), QIcon::Normal, QIcon::Off);
         action_Curves_for_PWM->setIcon(icon7);
+        action_TIMx_Calculator = new QAction(MainWindow);
+        action_TIMx_Calculator->setObjectName(QString::fromUtf8("action_TIMx_Calculator"));
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8(":/app8.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_TIMx_Calculator->setIcon(icon8);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        verticalLayout_4 = new QVBoxLayout(centralwidget);
+        verticalLayout_5 = new QVBoxLayout(centralwidget);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Preferred);
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
         groupBox->setSizePolicy(sizePolicy1);
         groupBox->setMinimumSize(QSize(382, 0));
+        groupBox->setMaximumSize(QSize(500, 16777215));
         QFont font1;
         font1.setPointSize(10);
         font1.setBold(false);
-        font1.setWeight(50);
         groupBox->setFont(font1);
         groupBox->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
@@ -218,10 +228,6 @@ public:
 
         horizontalLayout_3->addWidget(groupBox);
 
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_3->addItem(horizontalSpacer_2);
-
 
         verticalLayout_4->addLayout(horizontalLayout_3);
 
@@ -232,6 +238,7 @@ public:
         sizePolicy1.setHeightForWidth(groupBox_2->sizePolicy().hasHeightForWidth());
         groupBox_2->setSizePolicy(sizePolicy1);
         groupBox_2->setMinimumSize(QSize(382, 0));
+        groupBox_2->setMaximumSize(QSize(500, 16777215));
         groupBox_2->setFont(font2);
         groupBox_2->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
@@ -270,13 +277,14 @@ public:
         comboBox = new QComboBox(groupBox_2);
         comboBox->setObjectName(QString::fromUtf8("comboBox"));
         comboBox->setEnabled(true);
-        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        QSizePolicy sizePolicy3(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy3.setHorizontalStretch(0);
         sizePolicy3.setVerticalStretch(0);
         sizePolicy3.setHeightForWidth(comboBox->sizePolicy().hasHeightForWidth());
         comboBox->setSizePolicy(sizePolicy3);
-        comboBox->setMinimumSize(QSize(150, 0));
+        comboBox->setMinimumSize(QSize(200, 0));
         comboBox->setMaximumSize(QSize(150, 16777215));
+        comboBox->setFont(font2);
         comboBox->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "\n"
 "    border: 1px solid #97c3f3;\n"
@@ -299,10 +307,6 @@ public:
 
         horizontalLayout_4->addWidget(groupBox_2);
 
-        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_4->addItem(horizontalSpacer_3);
-
 
         verticalLayout_4->addLayout(horizontalLayout_4);
 
@@ -313,7 +317,7 @@ public:
         sizePolicy1.setHeightForWidth(groupBox_3->sizePolicy().hasHeightForWidth());
         groupBox_3->setSizePolicy(sizePolicy1);
         groupBox_3->setMinimumSize(QSize(382, 0));
-        groupBox_3->setMaximumSize(QSize(382, 16777215));
+        groupBox_3->setMaximumSize(QSize(500, 16777215));
         groupBox_3->setFont(font2);
         groupBox_3->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "\n"
@@ -426,12 +430,18 @@ public:
 
         horizontalLayout_5->addWidget(groupBox_3);
 
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_5->addItem(horizontalSpacer_4);
-
 
         verticalLayout_4->addLayout(horizontalLayout_5);
+
+
+        horizontalLayout_6->addLayout(verticalLayout_4);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer_2);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_6);
 
         textEdit = new QTextEdit(centralwidget);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
@@ -445,7 +455,7 @@ public:
 "   \n"
 "}"));
 
-        verticalLayout_4->addWidget(textEdit);
+        verticalLayout_5->addWidget(textEdit);
 
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
@@ -471,13 +481,15 @@ public:
 
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        sizePolicy3.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
+        pushButton->setSizePolicy(sizePolicy4);
         pushButton->setMinimumSize(QSize(361, 61));
         QFont font3;
         font3.setPointSize(11);
         font3.setBold(true);
-        font3.setWeight(75);
         pushButton->setFont(font3);
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border: 1px solid #97c3f3;\n"
@@ -518,12 +530,12 @@ public:
         gridLayout_2->addWidget(lineEdit_CRC, 1, 1, 1, 2);
 
 
-        verticalLayout_4->addLayout(gridLayout_2);
+        verticalLayout_5->addLayout(gridLayout_2);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 789, 21));
+        menubar->setGeometry(QRect(0, 0, 790, 22));
         menu = new QMenu(menubar);
         menu->setObjectName(QString::fromUtf8("menu"));
         menu_2 = new QMenu(menubar);
@@ -542,6 +554,7 @@ public:
         menu_2->addAction(action_Thermocouple_Calculator);
         menu_2->addAction(action_Signal_Converter);
         menu_2->addAction(action_Curves_for_PWM);
+        menu_2->addAction(action_TIMx_Calculator);
 
         retranslateUi(MainWindow);
 
@@ -550,7 +563,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.5", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "CRC Calculator by Solderingiron v1.0.7", nullptr));
         action->setText(QCoreApplication::translate("MainWindow", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
 #if QT_CONFIG(shortcut)
         action->setShortcut(QCoreApplication::translate("MainWindow", "F1", nullptr));
@@ -578,6 +591,10 @@ public:
         action_Curves_for_PWM->setText(QCoreApplication::translate("MainWindow", "\320\241urves for PWM", nullptr));
 #if QT_CONFIG(shortcut)
         action_Curves_for_PWM->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+6", nullptr));
+#endif // QT_CONFIG(shortcut)
+        action_TIMx_Calculator->setText(QCoreApplication::translate("MainWindow", "STM32 TIMx Calculator", nullptr));
+#if QT_CONFIG(shortcut)
+        action_TIMx_Calculator->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+7", nullptr));
 #endif // QT_CONFIG(shortcut)
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "CRC width", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Bit lenght:", nullptr));

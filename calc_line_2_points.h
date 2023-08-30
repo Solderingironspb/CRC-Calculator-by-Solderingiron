@@ -20,6 +20,8 @@ private slots:
     void on_pushButton_clicked();
     void float_check(bool* status, QString Text); //проверка правильности ввода данных
 
+    void on_lineEdit_X_in_textEdited(const QString &arg1);
+
 protected:
     void keyPressEvent(QKeyEvent *e) override;
 

@@ -13,6 +13,7 @@
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -31,7 +32,7 @@ class Ui_thermocouple_calculator
 {
 public:
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout_4;
+    QVBoxLayout *verticalLayout_3;
     QLabel *label;
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout;
@@ -45,18 +46,15 @@ public:
     QLineEdit *lineEdit_diapazon;
     QHBoxLayout *horizontalLayout_7;
     QGroupBox *groupBox_2;
-    QVBoxLayout *verticalLayout_3;
-    QHBoxLayout *horizontalLayout_6;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout_3;
+    QGridLayout *gridLayout;
     QLabel *label_5;
     QLineEdit *lineEdit_cold_junior_temperature;
     QLabel *label_6;
-    QHBoxLayout *horizontalLayout_4;
     QLabel *label_7;
     QLineEdit *lineEdit_temf;
     QLabel *label_8;
-    QHBoxLayout *horizontalLayout_5;
     QLabel *label_9;
     QLineEdit *lineEdit_temperature_calc;
     QLabel *label_10;
@@ -69,24 +67,32 @@ public:
     {
         if (thermocouple_calculator->objectName().isEmpty())
             thermocouple_calculator->setObjectName(QString::fromUtf8("thermocouple_calculator"));
-        thermocouple_calculator->resize(955, 306);
+        thermocouple_calculator->resize(1302, 326);
+        thermocouple_calculator->setMinimumSize(QSize(991, 250));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/app5.png"), QSize(), QIcon::Normal, QIcon::Off);
         thermocouple_calculator->setWindowIcon(icon);
         centralwidget = new QWidget(thermocouple_calculator);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        verticalLayout_4 = new QVBoxLayout(centralwidget);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        verticalLayout_3 = new QVBoxLayout(centralwidget);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         QFont font;
         font.setPointSize(12);
         label->setFont(font);
 
-        verticalLayout_4->addWidget(label);
+        verticalLayout_3->addWidget(label);
 
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
+        groupBox->setSizePolicy(sizePolicy);
+        groupBox->setMinimumSize(QSize(0, 0));
+        groupBox->setMaximumSize(QSize(16777215, 250));
         verticalLayout = new QVBoxLayout(groupBox);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
@@ -128,6 +134,11 @@ public:
 
         lineEdit_name = new QLineEdit(groupBox);
         lineEdit_name->setObjectName(QString::fromUtf8("lineEdit_name"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(lineEdit_name->sizePolicy().hasHeightForWidth());
+        lineEdit_name->setSizePolicy(sizePolicy1);
         lineEdit_name->setMinimumSize(QSize(150, 0));
         lineEdit_name->setFont(font1);
         lineEdit_name->setReadOnly(true);
@@ -147,6 +158,9 @@ public:
 
         lineEdit_diapazon = new QLineEdit(groupBox);
         lineEdit_diapazon->setObjectName(QString::fromUtf8("lineEdit_diapazon"));
+        sizePolicy1.setHeightForWidth(lineEdit_diapazon->sizePolicy().hasHeightForWidth());
+        lineEdit_diapazon->setSizePolicy(sizePolicy1);
+        lineEdit_diapazon->setMinimumSize(QSize(0, 0));
         lineEdit_diapazon->setFont(font1);
         lineEdit_diapazon->setReadOnly(true);
 
@@ -156,128 +170,129 @@ public:
         verticalLayout->addLayout(horizontalLayout_2);
 
 
-        verticalLayout_4->addWidget(groupBox);
+        verticalLayout_3->addWidget(groupBox);
 
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        verticalLayout_3 = new QVBoxLayout(groupBox_2);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        verticalLayout_2 = new QVBoxLayout();
+        sizePolicy.setHeightForWidth(groupBox_2->sizePolicy().hasHeightForWidth());
+        groupBox_2->setSizePolicy(sizePolicy);
+        groupBox_2->setMinimumSize(QSize(0, 0));
+        groupBox_2->setMaximumSize(QSize(16777215, 250));
+        verticalLayout_2 = new QVBoxLayout(groupBox_2);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_5 = new QLabel(groupBox_2);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setMinimumSize(QSize(180, 0));
+        sizePolicy.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
+        label_5->setSizePolicy(sizePolicy);
+        label_5->setMinimumSize(QSize(200, 0));
         label_5->setFont(font1);
 
-        horizontalLayout_3->addWidget(label_5);
+        gridLayout->addWidget(label_5, 0, 0, 1, 1);
 
         lineEdit_cold_junior_temperature = new QLineEdit(groupBox_2);
         lineEdit_cold_junior_temperature->setObjectName(QString::fromUtf8("lineEdit_cold_junior_temperature"));
+        sizePolicy1.setHeightForWidth(lineEdit_cold_junior_temperature->sizePolicy().hasHeightForWidth());
+        lineEdit_cold_junior_temperature->setSizePolicy(sizePolicy1);
         lineEdit_cold_junior_temperature->setMinimumSize(QSize(170, 0));
-        lineEdit_cold_junior_temperature->setMaximumSize(QSize(170, 16777215));
+        lineEdit_cold_junior_temperature->setMaximumSize(QSize(500, 16777215));
         lineEdit_cold_junior_temperature->setFont(font1);
 
-        horizontalLayout_3->addWidget(lineEdit_cold_junior_temperature);
+        gridLayout->addWidget(lineEdit_cold_junior_temperature, 0, 1, 1, 1);
 
         label_6 = new QLabel(groupBox_2);
         label_6->setObjectName(QString::fromUtf8("label_6"));
 
-        horizontalLayout_3->addWidget(label_6);
+        gridLayout->addWidget(label_6, 0, 2, 1, 1);
 
-
-        verticalLayout_2->addLayout(horizontalLayout_3);
-
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         label_7 = new QLabel(groupBox_2);
         label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setMinimumSize(QSize(180, 0));
+        sizePolicy.setHeightForWidth(label_7->sizePolicy().hasHeightForWidth());
+        label_7->setSizePolicy(sizePolicy);
+        label_7->setMinimumSize(QSize(200, 0));
         label_7->setFont(font1);
 
-        horizontalLayout_4->addWidget(label_7);
+        gridLayout->addWidget(label_7, 1, 0, 1, 1);
 
         lineEdit_temf = new QLineEdit(groupBox_2);
         lineEdit_temf->setObjectName(QString::fromUtf8("lineEdit_temf"));
+        sizePolicy1.setHeightForWidth(lineEdit_temf->sizePolicy().hasHeightForWidth());
+        lineEdit_temf->setSizePolicy(sizePolicy1);
         lineEdit_temf->setMinimumSize(QSize(170, 0));
-        lineEdit_temf->setMaximumSize(QSize(170, 16777215));
+        lineEdit_temf->setMaximumSize(QSize(500, 16777215));
         lineEdit_temf->setFont(font1);
 
-        horizontalLayout_4->addWidget(lineEdit_temf);
+        gridLayout->addWidget(lineEdit_temf, 1, 1, 1, 1);
 
         label_8 = new QLabel(groupBox_2);
         label_8->setObjectName(QString::fromUtf8("label_8"));
 
-        horizontalLayout_4->addWidget(label_8);
+        gridLayout->addWidget(label_8, 1, 2, 1, 1);
 
-
-        verticalLayout_2->addLayout(horizontalLayout_4);
-
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         label_9 = new QLabel(groupBox_2);
         label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setMinimumSize(QSize(180, 0));
+        sizePolicy.setHeightForWidth(label_9->sizePolicy().hasHeightForWidth());
+        label_9->setSizePolicy(sizePolicy);
+        label_9->setMinimumSize(QSize(200, 0));
         label_9->setFont(font1);
 
-        horizontalLayout_5->addWidget(label_9);
+        gridLayout->addWidget(label_9, 2, 0, 1, 1);
 
         lineEdit_temperature_calc = new QLineEdit(groupBox_2);
         lineEdit_temperature_calc->setObjectName(QString::fromUtf8("lineEdit_temperature_calc"));
+        sizePolicy1.setHeightForWidth(lineEdit_temperature_calc->sizePolicy().hasHeightForWidth());
+        lineEdit_temperature_calc->setSizePolicy(sizePolicy1);
         lineEdit_temperature_calc->setMinimumSize(QSize(170, 0));
-        lineEdit_temperature_calc->setMaximumSize(QSize(170, 16777215));
+        lineEdit_temperature_calc->setMaximumSize(QSize(500, 16777215));
         lineEdit_temperature_calc->setFont(font1);
         lineEdit_temperature_calc->setReadOnly(true);
 
-        horizontalLayout_5->addWidget(lineEdit_temperature_calc);
+        gridLayout->addWidget(lineEdit_temperature_calc, 2, 1, 1, 1);
 
         label_10 = new QLabel(groupBox_2);
         label_10->setObjectName(QString::fromUtf8("label_10"));
 
-        horizontalLayout_5->addWidget(label_10);
+        gridLayout->addWidget(label_10, 2, 2, 1, 1);
 
 
-        verticalLayout_2->addLayout(horizontalLayout_5);
-
-
-        horizontalLayout_6->addLayout(verticalLayout_2);
+        horizontalLayout_3->addLayout(gridLayout);
 
         pushButton = new QPushButton(groupBox_2);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
+        pushButton->setSizePolicy(sizePolicy2);
         pushButton->setMinimumSize(QSize(500, 0));
         QFont font2;
         font2.setPointSize(14);
         pushButton->setFont(font2);
 
-        horizontalLayout_6->addWidget(pushButton);
+        horizontalLayout_3->addWidget(pushButton);
 
 
-        verticalLayout_3->addLayout(horizontalLayout_6);
+        verticalLayout_2->addLayout(horizontalLayout_3);
 
 
         horizontalLayout_7->addWidget(groupBox_2);
 
 
-        verticalLayout_4->addLayout(horizontalLayout_7);
+        verticalLayout_3->addLayout(horizontalLayout_7);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        verticalLayout_4->addItem(verticalSpacer);
+        verticalLayout_3->addItem(verticalSpacer);
 
         thermocouple_calculator->setCentralWidget(centralwidget);
         menubar = new QMenuBar(thermocouple_calculator);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 955, 22));
+        menubar->setGeometry(QRect(0, 0, 1302, 22));
         thermocouple_calculator->setMenuBar(menubar);
         statusbar = new QStatusBar(thermocouple_calculator);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

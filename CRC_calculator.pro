@@ -16,6 +16,7 @@ SOURCES += \
     hex_to_float_double.cpp \
     main.cpp \
     mainwindow.cpp \
+    pwm_hz.cpp \
     rtd_calculator_resistance_to_temperature.cpp \
     signal_converter.cpp \
     thermocouple_calculator.cpp
@@ -27,6 +28,7 @@ HEADERS += \
     curves_for_pwm.h \
     hex_to_float_double.h \
     mainwindow.h \
+    pwm_hz.h \
     rtd_calculator_resistance_to_temperature.h \
     signal_converter.h \
     thermocouple_calculator.h
@@ -37,6 +39,7 @@ FORMS += \
     curves_for_pwm.ui \
     hex_to_float_double.ui \
     mainwindow.ui \
+    pwm_hz.ui \
     rtd_calculator_resistance_to_temperature.ui \
     signal_converter.ui \
     thermocouple_calculator.ui

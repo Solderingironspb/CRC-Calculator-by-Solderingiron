@@ -32,7 +32,7 @@
            <item row="0" column="1">
             <widget class="QLineEdit" name="lineEdit_float_hex">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -45,7 +45,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>170</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -63,7 +63,7 @@
            <item row="1" column="1">
             <widget class="QLineEdit" name="lineEdit_float_value">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -76,7 +76,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>170</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -97,7 +97,7 @@
            <item row="1" column="2">
             <widget class="QPushButton" name="pushButton_convert_to_hex_f">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -110,7 +110,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>110</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -127,7 +127,7 @@
            <item row="0" column="0">
             <widget class="QLabel" name="label">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -157,7 +157,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="label_2">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -187,7 +187,7 @@
            <item row="0" column="2">
             <widget class="QPushButton" name="pushButton_convert_to_float">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -200,7 +200,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>110</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -247,7 +247,7 @@
            <item row="0" column="1">
             <widget class="QLineEdit" name="lineEdit_Double_hex">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -260,7 +260,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>170</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -278,7 +278,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="label_4">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -308,7 +308,7 @@
            <item row="1" column="2">
             <widget class="QPushButton" name="pushButton_Convert_to_hex_d">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -321,7 +321,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>110</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -338,7 +338,7 @@
            <item row="0" column="0">
             <widget class="QLabel" name="label_3">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -368,7 +368,7 @@
            <item row="1" column="1">
             <widget class="QLineEdit" name="lineEdit_Double_value">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -381,7 +381,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>170</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>
@@ -402,7 +402,7 @@
            <item row="0" column="2">
             <widget class="QPushButton" name="pushButton_convert_to_double">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -415,7 +415,7 @@
              </property>
              <property name="maximumSize">
               <size>
-               <width>110</width>
+               <width>500</width>
                <height>16777215</height>
               </size>
              </property>

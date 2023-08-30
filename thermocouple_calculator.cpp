@@ -1310,6 +1310,7 @@ thermocouple_calculator::thermocouple_calculator(QWidget *parent) :
     ui->lineEdit_diapazon->setText("от -0.225 мВ до 21.103 мВ (от -50 °C до 1768.1 °C)");
     ui->lineEdit_cold_junior_temperature->setText("0");
     ui->lineEdit_temf->setText("0");
+    ui->lineEdit_temperature_calc->setText("0.0");
 }
 
 thermocouple_calculator::~thermocouple_calculator()
