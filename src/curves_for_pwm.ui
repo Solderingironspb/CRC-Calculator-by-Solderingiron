@@ -14,7 +14,7 @@
    <string>Curves for PWM</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app7.png</normaloff>:/app7.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -41,7 +41,7 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="images.qrc">:/curves.PNG</pixmap>
+              <pixmap resource="../resources/images.qrc">:/curves.PNG</pixmap>
              </property>
              <property name="scaledContents">
               <bool>false</bool>
@@ -335,7 +335,7 @@ p, li { white-space: pre-wrap; }
     border-radius: 2px;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                       stop: 0 #FFFFFF, stop: 1 #FFFFFF);
-   
+
 }</string>
          </property>
          <property name="html">
@@ -365,7 +365,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>

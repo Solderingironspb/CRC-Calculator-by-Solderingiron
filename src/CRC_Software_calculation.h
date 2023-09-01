@@ -18,7 +18,6 @@
 #ifndef CRC_SOFTWARE_CALCULATION_H_
 #define CRC_SOFTWARE_CALCULATION_H_
 
-#include "mainwindow.h"
 #include <stdint.h>
 #include <stdbool.h>
 

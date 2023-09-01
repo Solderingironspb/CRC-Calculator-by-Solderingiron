@@ -14,7 +14,7 @@
    <string>RTD Calculator Resistance to Temperature</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app4.png</normaloff>:/app4.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -435,7 +435,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>

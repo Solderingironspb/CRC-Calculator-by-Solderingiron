@@ -29,7 +29,7 @@
    <string>Уравнение прямой по 2 точкам</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app2.ico</normaloff>:/app2.ico</iconset>
   </property>
   <property name="styleSheet">
@@ -144,7 +144,7 @@
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="images.qrc">:/graph.png</pixmap>
+                 <pixmap resource="../resources/images.qrc">:/graph.png</pixmap>
                 </property>
                </widget>
               </item>
@@ -739,7 +739,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>
