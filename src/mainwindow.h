@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <calc_line_2_points.h>
-#include <hex_to_float_double.h>
+#include "calc_line_2_points.h"
+#include "hex_to_float_double.h"
 #include "rtd_calculator_resistance_to_temperature.h"
 #include "thermocouple_calculator.h"
 #include "signal_converter.h"
@@ -53,8 +53,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    calc_line_2_points calc_line_2_points;
-    hex_to_float_double hex_to_float_double;
+    calc_line_2_points m_calc_line_2_points;
+    hex_to_float_double m_hex_to_float_double;
     RTD_Calculator_Resistance_to_Temperature RTD_calculator;
     thermocouple_calculator THERMOCOUPLE_calculator;
     signal_converter SIGNAL_converter;

@@ -40,13 +40,13 @@ void MainWindow::on_action_triggered(){
 void MainWindow::on_action_2_triggered(){
 
 
-    calc_line_2_points.show();
-    calc_line_2_points.setWindowFlag( Qt::WindowMaximizeButtonHint);
+    m_calc_line_2_points.show();
+    m_calc_line_2_points.setWindowFlag( Qt::WindowMaximizeButtonHint);
 
 }
 void MainWindow::on_action_3_triggered(){
 
-    hex_to_float_double.show();
+    m_hex_to_float_double.show();
 
 }
 

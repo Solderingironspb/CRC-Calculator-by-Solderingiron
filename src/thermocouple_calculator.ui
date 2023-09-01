@@ -20,7 +20,7 @@
    <string>Thermocouple Calculator</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app5.png</normaloff>:/app5.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -510,7 +510,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>

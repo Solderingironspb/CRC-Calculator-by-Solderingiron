@@ -14,7 +14,7 @@
    <string>STM32 TIMx Calculator</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app8.png</normaloff>:/app8.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -27,7 +27,7 @@
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="images.qrc">:/STM32_Frecuency_calculator.png</pixmap>
+         <pixmap resource="../resources/images.qrc">:/STM32_Frecuency_calculator.png</pixmap>
         </property>
        </widget>
       </item>
@@ -318,7 +318,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>
