@@ -40,13 +40,13 @@ void MainWindow::on_action_triggered(){
 void MainWindow::on_action_2_triggered(){
 
 
-    calc_line_2_points.show();
-    calc_line_2_points.setWindowFlag( Qt::WindowMaximizeButtonHint);
+    m_calc_line_2_points.show();
+    m_calc_line_2_points.setWindowFlag( Qt::WindowMaximizeButtonHint);
 
 }
 void MainWindow::on_action_3_triggered(){
 
-    hex_to_float_double.show();
+    m_hex_to_float_double.show();
 
 }
 
@@ -71,6 +71,11 @@ void MainWindow::on_action_Curves_for_PWM_triggered(){
 void MainWindow::on_action_TIMx_Calculator_triggered(){
     STM32PWM.show();
 }
+
+void MainWindow::on_action_Ohm_s_law_Calculator_triggered(){
+    OHMS.show();
+}
+
 
 
 

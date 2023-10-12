@@ -14,7 +14,7 @@
    <string>HEX to Float/Double</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app3.ico</normaloff>:/app3.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -563,7 +563,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -12,5 +12,7 @@
         <file>curves.PNG</file>
         <file>STM32_Frecuency_calculator.png</file>
         <file>app8.png</file>
+        <file>ohms.png</file>
+        <file>app9.png</file>
     </qresource>
 </RCC>

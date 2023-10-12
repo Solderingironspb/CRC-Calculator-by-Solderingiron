@@ -2,13 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <calc_line_2_points.h>
-#include <hex_to_float_double.h>
+#include "calc_line_2_points.h"
+#include "hex_to_float_double.h"
 #include "rtd_calculator_resistance_to_temperature.h"
 #include "thermocouple_calculator.h"
 #include "signal_converter.h"
 #include "curves_for_pwm.h"
 #include "pwm_hz.h"
+#include "ohms_law.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -32,6 +33,7 @@ private slots:
     void on_action_Signal_Converter_triggered();
     void on_action_Curves_for_PWM_triggered();
     void on_action_TIMx_Calculator_triggered();
+    void on_action_Ohm_s_law_Calculator_triggered();
 
     void on_pushButton_clicked();
 
@@ -53,13 +55,14 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    calc_line_2_points calc_line_2_points;
-    hex_to_float_double hex_to_float_double;
+    calc_line_2_points m_calc_line_2_points;
+    hex_to_float_double m_hex_to_float_double;
     RTD_Calculator_Resistance_to_Temperature RTD_calculator;
     thermocouple_calculator THERMOCOUPLE_calculator;
     signal_converter SIGNAL_converter;
     curves_for_pwm CURVES_for_pwm;
     PWM_HZ STM32PWM;
+    Ohms_law OHMS;
 
 };
 #endif // MAINWINDOW_H

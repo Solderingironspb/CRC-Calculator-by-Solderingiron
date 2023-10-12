@@ -34,10 +34,10 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>CRC Calculator by Solderingiron v1.0.7</string>
+   <string>CRC Calculator by Solderingiron v1.0.8</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="images.qrc">
+   <iconset resource="../resources/images.qrc">
     <normaloff>:/app1.ico</normaloff>:/app1.ico</iconset>
   </property>
   <property name="styleSheet">
@@ -75,6 +75,7 @@ background-color: rgb(217, 234, 252);}</string>
             <property name="font">
              <font>
               <pointsize>10</pointsize>
+              <weight>50</weight>
               <bold>false</bold>
              </font>
             </property>
@@ -263,6 +264,7 @@ QGroupBox::title {
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QComboBox {
+	selection-color: rgb(0, 0, 0);
 
     border: 1px solid #97c3f3;
     border-radius: 2px;
@@ -588,6 +590,7 @@ QGroupBox::title {
         <property name="font">
          <font>
           <pointsize>11</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -656,7 +659,7 @@ QPushButton:flat {
      <x>0</x>
      <y>0</y>
      <width>790</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -676,6 +679,7 @@ QPushButton:flat {
     <addaction name="action_Signal_Converter"/>
     <addaction name="action_Curves_for_PWM"/>
     <addaction name="action_TIMx_Calculator"/>
+    <addaction name="action_Ohm_s_law_Calculator"/>
    </widget>
    <addaction name="menu_2"/>
    <addaction name="menu"/>
@@ -683,7 +687,7 @@ QPushButton:flat {
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/about.png</normaloff>:/about.png</iconset>
    </property>
    <property name="text">
@@ -695,7 +699,7 @@ QPushButton:flat {
   </action>
   <action name="action_2">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app2.ico</normaloff>:/app2.ico</iconset>
    </property>
    <property name="text">
@@ -707,7 +711,7 @@ QPushButton:flat {
   </action>
   <action name="action_3">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app3.ico</normaloff>:/app3.ico</iconset>
    </property>
    <property name="text">
@@ -719,7 +723,7 @@ QPushButton:flat {
   </action>
   <action name="action_RTD_Calculator">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app4.png</normaloff>:/app4.png</iconset>
    </property>
    <property name="text">
@@ -731,7 +735,7 @@ QPushButton:flat {
   </action>
   <action name="action_Thermocouple_Calculator">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app5.png</normaloff>:/app5.png</iconset>
    </property>
    <property name="text">
@@ -743,7 +747,7 @@ QPushButton:flat {
   </action>
   <action name="action_Signal_Converter">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app6.png</normaloff>:/app6.png</iconset>
    </property>
    <property name="text">
@@ -755,7 +759,7 @@ QPushButton:flat {
   </action>
   <action name="action_Curves_for_PWM">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app7.png</normaloff>:/app7.png</iconset>
    </property>
    <property name="text">
@@ -767,7 +771,7 @@ QPushButton:flat {
   </action>
   <action name="action_TIMx_Calculator">
    <property name="icon">
-    <iconset resource="images.qrc">
+    <iconset resource="../resources/images.qrc">
      <normaloff>:/app8.png</normaloff>:/app8.png</iconset>
    </property>
    <property name="text">
@@ -777,9 +781,21 @@ QPushButton:flat {
     <string>Ctrl+7</string>
    </property>
   </action>
+  <action name="action_Ohm_s_law_Calculator">
+   <property name="icon">
+    <iconset resource="../resources/images.qrc">
+     <normaloff>:/app9.png</normaloff>:/app9.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ohm's law Calculator</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+8</string>
+   </property>
+  </action>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources/images.qrc"/>
  </resources>
  <connections/>
 </ui>
